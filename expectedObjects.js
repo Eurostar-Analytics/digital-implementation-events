@@ -523,6 +523,18 @@ event: "TealiumLink"
             eventName: "ErrorEvent",
             event: "TealiumLink"
         },
+	{
+		eventAction: "Expand",
+		currency: /^(GBP|EUR|USD)$/,
+		funnel_name: "Trains",
+		page_name: "Checkout",
+		page_category: "Checkout",
+		ld_version: "design-system",
+		eventCategory: "Passenger Details",
+		eventLabel: "Membership number accordion",
+		eventName: "InteractionEvent",
+		event: "TealiumLink"
+	},
         {
             event: 'TealiumLink',
             eventName: 'InteractionEvent',
