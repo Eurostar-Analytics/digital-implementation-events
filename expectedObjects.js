@@ -543,18 +543,18 @@ event: "TealiumLink"
             eventLabel: ["reasons for this travel : business", "reasons for this travel : holiday", "reasons for this travel : visiting family or friends"]
         },
         {"currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_category":"Checkout","ld_version":"design-system","event":"TealiumView","activityType":"train exchange","isLoggedIn":false,"customer_hashedemail":null,"customer_is_admin":null,"businessID":null,"loyaltyTier":null,"membershipID":null,"membershipDetails":null,"pointsToSpend":null,"pointsToUpgrade":null,"directOrConnection":"direct","sJourneyType":"One way","sFromCode":"7015400","sFromName":"London St Pancras Int'l","sToCode":"8727100","sToName":"Paris Gare du Nord","sDateOutbound":"2024-10-23","sDateInbound":"","sTravelHorizon":0,"sTravelDuration":null,"sPaxTotal":1,"sPaxAdult":1,"sPaxChildren":0,"sPaxInfants":0,"sPaxSenior":0,"sPaxYouth":0,"sPaxCompanion":0,"basket_value_inpoints":0,"pointsOrRegular":"regular booking","promoBooking":"","ecommerce_action":"checkout","payment_methods":"Card|GooglePay|Invoice|PayPal","club_eurostar_discount":"none","basket_value":270,"products_count":1,"product_brand":["ES"],"product_id":["7015400 - 8727100"],"product_category":["trains"],"product_name":["7015400 - 8727100:adult"],"product_price":["270.00"],"product_price_inpoints":["0"],"product_quantity":[1],"product_train_numberofconnections":[1],"product_departure_date":["2024-10-23"],"product_train_departuretime":["18:01"],"product_train_fbccode":["H01PSXASBGX"],"product_train_number":["9046"],"product_variant":["outbound"],"product_hotel_origin_code":[],"product_hotel_destination_code":[],"product_hotel_occupancy":[],"product_hotel_starrating":[],"product_hotel_review_count":[],"product_hotel_review_score":[],"product_hotel_room_extra":[],"product_return_date":[],"product_train_class":["Standard Premier"],"product_train_route":["london route"],"product_train_origin_stationcode":["7015400"],"product_train_destination_stationcode":["8727100"],"product_train_arrivaltime":["21:28"],"product_train_tickettype":["ES_PUB_SP"],"product_train_connectionoperator":[null],"product_train_passenger_type":["adult"],"product_train_fare_name":[],"product_train_fare_type":[],"page_name":"Checkout"},
-        {
-            eventAction: "Points payment selected",
-            currency: /^(GBP|EUR|USD)$/,
-            funnel_name: "Trains",
-            page_name: "Checkout",
-            page_category: "Checkout",
-            ld_version: "design-system",
-            eventCategory: "Points usage",
-            eventLabel: ["200", "400"],
-            eventName: "InteractionEvent",
-            event: "TealiumLink"
-        },
+	{
+		eventAction: "Points payment selected",
+		currency: /^(GBP|EUR|USD)$/,
+		funnel_name: "Trains",
+		page_name: "Checkout",
+		page_category: "Checkout",
+		ld_version: "design-system",
+		eventCategory: "Points usage",
+		eventLabel: /^.{1,3}$/,
+		eventName: "InteractionEvent",
+		event: "TealiumLink"
+	},
         {
             event: "TealiumLink",
             eventName: "InteractionEvent",
