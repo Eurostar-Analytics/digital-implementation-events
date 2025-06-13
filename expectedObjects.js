@@ -52,7 +52,7 @@ window.expectedTealiumLinkObjects = [
 },	
 {
   "eventAction": "Field Start",
-  "eventLabel": "T:From",
+  "eventLabel": /^(T|P|H):From$/,
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
   "eventName": "InteractionEvent",
@@ -68,7 +68,7 @@ window.expectedTealiumLinkObjects = [
 },
 {
   "eventAction": "Field Start",
-  "eventLabel": "T:To",
+  "eventLabel":/^(T|P|H):To$/,
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
   "eventName": "InteractionEvent",
