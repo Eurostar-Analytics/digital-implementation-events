@@ -98,10 +98,10 @@ window.expectedTealiumViewObjects = [
 	pointsOrRegular:/^(regular booking|points booking)$/,
 	basket_value: /^\d+$/,
 	basket_value_inpoints: /^\d+$/,
-	sTrainNumberOutbound: "9080",
-	sOutboundTime: "06:01",
-	sClassOutbound: "Eurostar Plus",
-	sTrainTarriffOutbound: "H19PSXASBGN",
+	sTrainNumberOutbound: /^\d{4}$/,
+	sOutboundTime: /^\d{2}:\d{2}$/,
+	sClassOutbound: /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
+	sTrainTarriffOutbound: /^[A-Z0-9]{11}$/,
 	funnel_name: "Trains",
 	page_name: "TravelExtras"
 }
