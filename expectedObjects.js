@@ -59,24 +59,24 @@ window.expectedTealiumLinkObjects = [
   "event": "TealiumLink"
 },
 {
-  "eventAction": "Field Completion",
-  "eventLabel": /^(T:From_\d{7}|P:To_\d{3})$/,
-  "eventCategory": "Booking Magnet",
-  "interactionSection": "header",
-  "eventName": "InteractionEvent",
-  "event": "TealiumLink"
-},
-{
   "eventAction": "Field Start",
   "eventLabel":/^(T|P|H):To$/,
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
+},	
+{
+  "eventAction": "Field Completion",
+  "eventLabel": /^(T:From_\d{7}|P:From_\d{3})$/,
+  "eventCategory": "Booking Magnet",
+  "interactionSection": "header",
+  "eventName": "InteractionEvent",
+  "event": "TealiumLink"
 },
 {
   "eventAction": "Field Completion",
-  "eventLabel": /^T:To_\d{7}$/,
+  "eventLabel": /^(T:To_\d{7}|P:To_\d{3})$/,
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
   "eventName": "InteractionEvent",
