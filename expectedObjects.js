@@ -60,7 +60,7 @@ window.expectedTealiumLinkObjects = [
 },
 {
   "eventAction": "Field Completion",
-  "eventLabel": /^T:From_\d{7}$/,
+  "eventLabel": /^(T:From_\d{7}|P:To_\d{3})$/,
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
   "eventName": "InteractionEvent",
