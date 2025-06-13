@@ -100,11 +100,12 @@ window.expectedTealiumLinkObjects = [
 },
 {
   "eventAction": "Field Completion",
-  "eventLabel": "T:Calendar|Outbound",
+  "eventLabel": /^(T|P|H):Calendar|Outbound$/,
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
   "eventName": "InteractionEvent",
-  "event": "TealiumLink"
+  "event": "TealiumLink",
+  "product": /^(trains|packages|hotels)$/,
 },
 {
   "eventAction": "Field Start",
