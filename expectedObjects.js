@@ -9,6 +9,14 @@ window.expectedTealiumLinkObjects = [
   "event": "TealiumLink"
 },
 {
+	eventAction: "OnClick",
+	destinationUrl: /^(.*)$/,
+	eventCategory: "HeaderLink",
+	eventLabel: "TopMenu_Account",
+	eventName: "NavigationEvent_v4",
+	event: "TealiumLink"
+},	
+{
   "eventCategory": "Internal Promotion",
   "eventAction": "Impression",
   "eventNonInteraction": "true",
