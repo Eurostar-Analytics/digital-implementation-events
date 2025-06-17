@@ -654,5 +654,12 @@ event: "TealiumLink"
         product_train_fare_name: [],
         product_train_fare_type: [],
         page_name: "Checkout"
-    }
+    },
+  {
+    "event": "TealiumLink",
+    "eventName": "InteractionEvent",
+    "eventCategory": "Eurostar Chatbot",
+    "eventAction": "Start Conversation",
+    "conversationId": /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/
+  }	
 ];
