@@ -92,7 +92,7 @@ window.expectedTealiumLinkObjects = [
 },
 {
   "eventAction": "Click",
-  "eventLabel": "T:Search",
+  "eventLabel": /^(T|P|H):Search$/,
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
   "eventName": "InteractionEvent",
