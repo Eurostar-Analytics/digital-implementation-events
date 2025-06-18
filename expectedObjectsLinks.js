@@ -105,7 +105,7 @@ window.expectedTealiumLinkObjects = [
   "interactionSection": "header",
   "eventName": "InteractionEvent",
   "event": "TealiumLink",
-  "product": /^(trains|packages|hotels)$/,
+  "product": /^(trains|packages|hotels)$/
 },
 {
   "eventAction": "Field Start",
