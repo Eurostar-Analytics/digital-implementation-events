@@ -526,7 +526,7 @@ event: "TealiumLink"
         {
             eventAction: "Validation Error",
             currency: /^(GBP|EUR|USD)$/,
-            funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,,
+            funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
             page_name: "Checkout",
             page_category: "Checkout",
             ld_version: "design-system",
@@ -595,7 +595,7 @@ event: "TealiumLink"
         },
             {
         currency: /^(GBP|EUR|USD)$/,
-        funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,,
+        funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
         page_category: "Checkout",
         ld_version: "design-system",
         event: "TealiumView",
