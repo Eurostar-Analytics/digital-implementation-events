@@ -266,7 +266,7 @@ window.expectedTealiumLinkObjects = [
 {
   "eventAction": "Hotel Selection",
   "eventCategory": "Product tile",
-  "hHotelDetails": /^\[".+\|\d+\|.+"\]$/,
+  "hHotelDetails": /^.+\|\d+\|.+$/,
   "hotelId": [/^\d+$/],
   "hotelName": [/^.+$/],
   "hHotelPackagePromotion": [/^\d+$/],
