@@ -325,7 +325,7 @@ event: "TealiumLink"
 {
 eventAction: "Login",
 currency: /^[A-Z]{3}$/,
-funnel_name: "Train",
+funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
 page_name: "Login",
 page_category: "Checkout",
 ld_version: "design-system",
@@ -366,7 +366,7 @@ event: "TealiumLink"
 {
 	eventAction: "Page Load",
 	currency: /^(GBP|EUR|USD)$/,
-	funnel_name: "Trains",
+	funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
 	page_name: "Checkout",
 	page_category: "Checkout",
 	ld_version: "design-system",
@@ -425,14 +425,26 @@ event: "TealiumLink"
 	eventName: "InteractionEvent",
 	event: "TealiumLink" 
 },
-        {"eventAction":"Login","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Login","page_category":"Checkout","ld_version":"design-system","eventCategory":"Login or Register","eventLabel":"Check out as a guest","formName":"checkout","eventName":"InteractionEvent","event":"TealiumLink"},
+{
+	"eventAction":"Login",
+	"currency":/^(GBP|EUR|USD)$/,
+	funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
+	"page_name":"Login",
+	"page_category":"Checkout",
+	"ld_version":"design-system",
+	"eventCategory":"Login or Register",
+	"eventLabel":"Check out as a guest",
+	"formName":"checkout",
+	"eventName":"InteractionEvent",
+	"event":"TealiumLink"
+},
         {"event":"TealiumView","page_category":"Bookings","isLoggedIn":"true","customer_hashedemail":"52296546df7b53c4242e0ecae775f6bf3c3aa919387cd39c0979fe1a9d5b8b3a","customer_is_admin":"false","loyaltyTier":"Etoile","membershipID":"30838110000069353","membershipDetails":"Points: 1363811; Points to upgrade: N/A","pointsToSpend":1363811,"pointsToUpgrade":null,"subscriptionType":"premium-pass","subscriptionDuration":6,"subscriptionRemainingDuration":134,"mktOptions":"false","page_name":"Bookings/UpcomingBookings"},
         {"eventAction":"Impression","eventCategory":"Internal Promotion","eventLabel":"Dynamic Promo Banner","eventNonInteraction":true,"promotion_id":/^(.*)$/,"promotion_name":/^(.*)$/,"promotion_position":["00_01"],"promotion_creative":/^(.*)$/,"page_element_cta":/^(.*)$/,"eventName":"ImpressionEvent","event":"TealiumLink"},
         {"eventAction":"Click","eventCategory":"Bookings","eventLabel":"View Booking","eventName":"InteractionEvent","event":"TealiumLink"},
         {
             eventAction: "Click",
             currency: /^(GBP|EUR|USD)$/,
-            funnel_name: "Trains",
+            funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
             page_name: "Checkout",
             page_category: "Checkout",
             ld_version: "design-system",
@@ -444,7 +456,7 @@ event: "TealiumLink"
         {
             eventAction: "Form Submission",
             currency: /^(GBP|EUR|USD)$/,
-            funnel_name: "Trains",
+            funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
             page_name: "Checkout",
             page_category: "Checkout",
             ld_version: "design-system",
@@ -458,7 +470,7 @@ event: "TealiumLink"
         {
             eventAction: "Select A Passenger",
             currency: /^(GBP|EUR|USD)$/,
-            funnel_name: "Trains",
+            funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
             page_name: "Checkout",
             page_category: "Checkout",
             ld_version: "design-system",
@@ -470,7 +482,7 @@ event: "TealiumLink"
         {
             eventAction: "Points payment unselected",
             currency: /^(GBP|EUR|USD)$/,
-            funnel_name: "Trains",
+            funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
             page_name: "Checkout",
             page_category: "Checkout",
             ld_version: "design-system",
@@ -514,7 +526,7 @@ event: "TealiumLink"
         {
             eventAction: "Validation Error",
             currency: /^(GBP|EUR|USD)$/,
-            funnel_name: "Trains",
+            funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,,
             page_name: "Checkout",
             page_category: "Checkout",
             ld_version: "design-system",
@@ -527,7 +539,7 @@ event: "TealiumLink"
 	{
 		eventAction: "Expand",
 		currency: /^(GBP|EUR|USD)$/,
-		funnel_name: "Trains",
+		funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
 		page_name: "Checkout",
 		page_category: "Checkout",
 		ld_version: "design-system",
@@ -547,7 +559,7 @@ event: "TealiumLink"
 	{
 		eventAction: "Points payment selected",
 		currency: /^(GBP|EUR|USD)$/,
-		funnel_name: "Trains",
+		funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
 		page_name: "Checkout",
 		page_category: "Checkout",
 		ld_version: "design-system",
@@ -583,7 +595,7 @@ event: "TealiumLink"
         },
             {
         currency: /^(GBP|EUR|USD)$/,
-        funnel_name: "Trains",
+        funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,,
         page_category: "Checkout",
         ld_version: "design-system",
         event: "TealiumView",
