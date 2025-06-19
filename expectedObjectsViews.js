@@ -125,7 +125,7 @@ window.expectedTealiumViewObjects = [
   funnel_name: "ManageBooking",
   page_category: "Dashboard",
   ecommerce_action: "view booking",
-  currency: /^[A-Z]{3}$/, // e.g., GBP
+  currency: /^[A-Z]{3}$/, 
   isLoggedIn: /^(true|false)$/,
   customer_hashedemail: /^[a-f0-9]{64}$/,
   customer_is_admin: /^(true|false|null)$/,
@@ -136,8 +136,8 @@ window.expectedTealiumViewObjects = [
   pointsToSpend: /^\d+$/,
   pointsToUpgrade: /^\d+|null$/,
   mktOptions: /^(true|false)$/,
-  order_id: /^[A-Z0-9]{13}$/, // e.g., 20250530Y6MKHY
-  pnr: /^[A-Z0-9]{6}$/, // e.g., Y6MKHY
+  order_id: /^[A-Z0-9]{14}$/, 
+  pnr: /^[A-Z0-9]{6}$/, 
   pointsOrRegular: /^(regular booking|points booking)$/,
   purchase_hashedemail: /^[a-f0-9]{64}$/,
   transactionType: /^train booking$/,
