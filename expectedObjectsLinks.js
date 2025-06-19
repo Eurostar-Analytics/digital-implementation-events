@@ -13,9 +13,24 @@ window.expectedTealiumLinkObjects = [
 	destinationUrl: /^(.*)$/,
 	eventCategory: "HeaderLink",
 	eventLabel: "TopMenu_Account",
-	eventName: "NavigationEvent_v4",
+	eventName: /^NavigationEvent_v(\d{1})$/,
 	event: "TealiumLink"
-},	
+},
+  {
+    "eventAction": "OnClick",
+    "eventCategory": "HeaderLink",
+    "eventLabel": "TopMenu_MarketSelectorModal_Open",
+    "eventName": /^NavigationEvent_v(\d{1})$/,
+    "event": "TealiumLink"
+  },
+  {
+    "eventAction": "OnClick",
+    "eventCategory": "HeaderLink",
+    "eventLabel": "TopMenu_MarketSelectorModal_Select",
+    "destinationUrl": "https://staging.eurostar.com/uk-en",
+    "eventName": /^NavigationEvent_v(\d{1})$/,
+    "event": "TealiumLink"
+  },	
 {
   "eventCategory": "Internal Promotion",
   "eventAction": "Impression",
