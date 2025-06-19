@@ -104,5 +104,20 @@ window.expectedTealiumViewObjects = [
 	sTrainTarriffOutbound: /^[A-Z0-9]{11}$/,
 	funnel_name: "Trains",
 	page_name: "TravelExtras"
+},
+	{
+	event: "TealiumView",
+	page_category: "Overview",
+	isLoggedIn: "true",
+	customer_hashedemail: /^[a-f0-9]{64}$/,
+	customer_is_admin: "false",
+	businessID: /^(null|[\w-]*)$/,
+	loyaltyTier: /^(Classique|Carte Blanche|Etoile|Silver|Gold|null)$/,
+	membershipID: /^\d{17}$/,
+	membershipDetails: /^(.*)$/,
+	pointsToSpend: /^\d+$/,
+    	pointsToUpgrade: /^\d+|null$/,
+	mktOptions: "false",
+	page_name: "Overview"
 }
 ];
