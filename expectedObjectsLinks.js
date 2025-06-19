@@ -30,7 +30,15 @@ window.expectedTealiumLinkObjects = [
     "destinationUrl": "https://staging.eurostar.com/uk-en",
     "eventName": /^NavigationEvent_v(\d{1})$/,
     "event": "TealiumLink"
-  },	
+  },
+{
+	eventAction: "OnClick",
+	eventCategory: "HeaderLink",
+	eventLabel: "TopMenu_EurostarApp",
+	destinationUrl: "https://staging.eurostar.comtravel-info/your-trip/eurostar-app",
+	eventName: /^NavigationEvent_v(\d{1})$/,
+	event: "TealiumLink"
+},	
 {
   "eventCategory": "Internal Promotion",
   "eventAction": "Impression",
