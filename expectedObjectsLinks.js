@@ -536,14 +536,10 @@ event: "TealiumLink"
             paymentDetails: "SavedCard",
             paymentCardType: ["mc", "visa", "jcb", "diners", "discover"]
         },
-        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.firstName","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.lastName","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.email","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.email","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Complete","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.mobile","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.1.firstName","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.1.lastName","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Field Start","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.mobile","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":/^Field (Start|Complete)$/,"currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.firstName","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":/^Field (Start|Complete)$/,"currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.lastName","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":/^Field (Start|Complete)$/,"currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.email","eventName":"InteractionEvent","event":"TealiumLink"},
+        {"eventAction":/^Field (Start|Complete)$/,"currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.mobile","eventName":"InteractionEvent","event":"TealiumLink"},
         {"eventAction":"Click","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Newsletter","eventLabel":"Opt-Out","mktOptions":"false","eventName":"InteractionEvent","event":"TealiumLink"},
         {"eventCategory":"Passenger detail","eventAction":"Contact details","eventLabel":"Save contact details:button","eventName":"InteractionEvent","event":"TealiumLink"},
         {
@@ -598,18 +594,6 @@ event: "TealiumLink"
             eventAction: "Select A Passenger",
             eventLabel: "Existing Passenger"
         },
-{
-	eventAction: "Field Complete",
-	currency: /^(GBP|EUR|USD)$/,
-	funnel_name: "Trains",
-	page_name: "Checkout",
-	page_category: "Checkout",
-	ld_version: "design-system",
-	eventCategory: "Passenger Details",
-	eventLabel: /^passengers\.\d{1}\.firstName$/,
-	eventName: "InteractionEvent",
-	event: "TealiumLink"
-},
         {
             "event":"TealiumView",
             "page_category":"Overview",
