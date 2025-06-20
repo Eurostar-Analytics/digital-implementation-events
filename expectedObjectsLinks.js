@@ -598,7 +598,18 @@ event: "TealiumLink"
             eventAction: "Select A Passenger",
             eventLabel: "Existing Passenger"
         },
-
+{
+	eventAction: "Field Complete",
+	currency: /^(GBP|EUR|USD)$/,
+	funnel_name: "Trains",
+	page_name: "Checkout",
+	page_category: "Checkout",
+	ld_version: "design-system",
+	eventCategory: "Passenger Details",
+	eventLabel: "passengers.0.firstName",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
         {
             "event":"TealiumView",
             "page_category":"Overview",
