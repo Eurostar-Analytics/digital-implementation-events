@@ -606,7 +606,7 @@ event: "TealiumLink"
 	page_category: "Checkout",
 	ld_version: "design-system",
 	eventCategory: "Passenger Details",
-	eventLabel: "passengers.0.firstName",
+	eventLabel: /^passengers\.\d{1}\.firstName$/,
 	eventName: "InteractionEvent",
 	event: "TealiumLink"
 },
