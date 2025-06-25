@@ -696,7 +696,20 @@ event: "TealiumLink"
 	formName: "checkout",
 	eventName: "InteractionEvent",
 	event: "TealiumLink"
-},	
+},
+	{
+	eventAction: "Validation Error",
+	currency: /^(GBP|EUR|USD)$/,
+	funnel_name: /^(Trains|Packages|Hotels)$/,
+	page_name: "BookingConfirmation",
+	page_category: "BookingConfirmation",
+	eventCategory: "Error",
+	eventLabel: "CodeMismatchException",
+	errorMessage: "Code not recognised",
+	formName: "checkout-verification-modal",
+	eventName: "ErrorEvent",
+	event: "TealiumLink"
+},
   {
     "event": "TealiumLink",
     "eventName": "InteractionEvent",
