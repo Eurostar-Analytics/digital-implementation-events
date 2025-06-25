@@ -685,6 +685,18 @@ event: "TealiumLink"
         product_train_fare_type: [],
         page_name: "Checkout"
     },
+{
+	eventAction: "Register",
+	currency: /^(GBP|EUR|USD)$/,
+	funnel_name: /^(Trains|Packages|Hotels)$/,
+	page_name: "BookingConfirmation",
+	page_category: "BookingConfirmation",
+	eventCategory: "Sign Up Now",
+	eventLabel: "Register click",
+	formName: "checkout",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},	
   {
     "event": "TealiumLink",
     "eventName": "InteractionEvent",
