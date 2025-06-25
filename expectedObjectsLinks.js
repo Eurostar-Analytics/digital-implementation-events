@@ -66,6 +66,22 @@ window.expectedTealiumLinkObjects = [
   "event": "TealiumLink"
 },
 {
+	eventAction: "Click",
+	eventCategory: "Internal Promotion",
+	promotion_name: /^\["(.*)"\]$/,
+	promotion_position: /^\["\d{2}_\d{2}"]$/,
+	page_element_cta: "Close",
+	eventLabel: "Disruption",
+	promotion_id: [
+		"Disruption"
+	],
+	promotion_creative: [
+		"major"
+	],
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
   "eventAction": "Expand",
   "eventCategory": "Booking Magnet",
   "eventLabel": /^(P|H|T)(:Expand)$/,
