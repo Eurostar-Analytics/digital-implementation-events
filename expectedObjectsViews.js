@@ -327,7 +327,7 @@ window.expectedTealiumViewObjects = [
 		"7015400 - 8727100"
 	],
 	product_name: [
-		7015400 - 8727100:adult"
+		"7015400 - 8727100:adult"
 	],
 	product_price: [
 		"17.00"
