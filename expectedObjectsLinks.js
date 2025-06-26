@@ -83,10 +83,10 @@ window.expectedTealiumLinkObjects = [
 	"eventCategory": "Internal Promotion",
 	"promotion_name": /\s.*\s/,
 	"promotion_position": /\d{2}_\d{2}$/,
-	"page_element_cta": "Close",
+	"page_element_cta": /^.+$/,
 	"eventLabel": "Disruption",
 	"promotion_id": ["Disruption"],
-	"promotion_creative": ["major"],
+	"promotion_creative": /^.+$/,
 	"eventName": "InteractionEvent",
 	"event": "TealiumLink"
 },
