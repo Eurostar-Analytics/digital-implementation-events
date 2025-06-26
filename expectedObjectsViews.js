@@ -277,5 +277,110 @@ window.expectedTealiumViewObjects = [
         product_train_fare_type: [],
 	product_cancellation_policy: [null],
 	page_name: "Checkout"
-}
+},
+{
+	event: "TealiumView",
+	funnel_name: "ManageBooking",
+	page_category: "Upgrade",
+	currency: /^(GBP|EUR|USD)$/, 
+	ecommerce_action: "product impressions",
+	isLoggedIn: /(true|false)/,
+        customer_hashedemail: /^.{0,64}$/,
+        customer_is_admin: /(true|false|null)/,
+        businessID: null,
+        loyaltyTier: /^(Carte Blanche|Silver|Gold|null)$/,
+	membershipID: /^.{0,17}$/,
+        membershipDetails: /^.{0,100}$/,
+	pointsToSpend: /\d*/,
+        pointsToUpgrade: /\d*/,
+	mktOptions: "false",
+	pnr: /^[A-Z0-9]{6}$/, 
+	purchase_hashedemail: /^.{0,64}$/,
+	transaction_date: /^[\d-]{10}$/,
+	sFromCode: /^\d{7}$/,
+        sFromName: /.+/,
+        sToCode: /^\d{7}$/,
+        sToName: /.+/,
+	sJourneyType: /(One way|Return)/,
+	directOrConnection: /(direct|connection)/,
+	sDateOutbound: /^$|undefined|\d{4}-\d{2}-\d{2}$/,
+        sDateInbound: /^$|undefined|^\d{4}-\d{2}-\d{2}$/,
+	sTravelHorizon: /\d+/,
+        sTravelDuration: null,
+        sPaxTotal: /\d+/,
+        sPaxAdult: /\d+/,
+        sPaxChildren: /\d+/,
+        sPaxInfants: /\d+/,
+        sPaxSenior: /\d+/,
+        sPaxYouth: /\d+/,
+        sPaxCompanion: /\d+/,
+	product_brand: [
+		"ES"
+	],
+	product_category: [
+		"trains"
+	],
+	product_departure_date: [
+		"2025-07-03"
+	],
+	product_id: [
+		"7015400 - 8727100"
+	],
+	product_name: [
+		7015400 - 8727100:adult"
+	],
+	product_price: [
+		"17.00"
+	],
+	product_quantity: [
+		1
+	],
+	product_return_date: [
+		null
+	],
+	product_train_arrivaltime: [
+		10:19"
+	],
+	product_train_class: [
+		"Eurostar Plus"
+	],
+	product_train_connectioncode: [
+		null
+	],
+	product_train_connectionoperator: [
+		null
+	],
+	product_train_departuretime: [
+		07:01"
+	],
+	product_train_destination_stationcode: [
+		"8727100"
+	],
+	product_train_fbccode: [
+		"H17PSXASBGN"
+	],
+	product_train_number: [
+		"9004"
+	],
+	product_train_numberofconnections: [
+		1
+	],
+	product_train_origin_stationcode: [
+		"7015400"
+	],
+	product_train_passenger_type: [
+		"adult"
+	],
+	product_train_route: [
+		"london route"
+	],
+	product_train_tickettype: [
+		"ESTAR_PUB_PLUS"
+	],
+	product_variant: [
+		"outbound"
+	],
+	products_count: 1,
+	page_name: "Upgrade/SelectUpgrade"
+}	
 ];
