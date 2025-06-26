@@ -73,7 +73,7 @@ window.expectedTealiumLinkObjects = [
 	page_element_cta: /^.+$/,
 	eventLabel: "Disruption",
 	promotion_id: ["Disruption"],
-	promotion_creative: /\s.*\s/,
+	promotion_creative: /\s?.*\s?/,
 	eventNonInteraction: true,
 	eventName: "ImpressionEvent",
 	event: "TealiumLink"
