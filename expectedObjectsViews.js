@@ -339,7 +339,7 @@ window.expectedTealiumViewObjects = [
 		null
 	],
 	product_train_arrivaltime: [
-		10:19"
+		"10:19"
 	],
 	product_train_class: [
 		"Eurostar Plus"
@@ -351,7 +351,7 @@ window.expectedTealiumViewObjects = [
 		null
 	],
 	product_train_departuretime: [
-		07:01"
+		"07:01"
 	],
 	product_train_destination_stationcode: [
 		"8727100"
@@ -363,7 +363,7 @@ window.expectedTealiumViewObjects = [
 		"9004"
 	],
 	product_train_numberofconnections: [
-		1
+		"1"
 	],
 	product_train_origin_stationcode: [
 		"7015400"
