@@ -120,6 +120,15 @@ window.expectedTealiumViewObjects = [
 	mktOptions: "false",
 	page_name: "Overview"
 },
+	{
+	currency: /^(GBP|EUR|USD)$/, 
+	funnel_name: /^(Trains|Packages|Hotels)$/, 
+	page_category: "Login",
+	ld_version: "design-system",
+	event: "TealiumView",
+	isLoggedIn: "false",
+	page_name: "Login"
+},
 {
   event: "TealiumView",
   funnel_name: "ManageBooking",
