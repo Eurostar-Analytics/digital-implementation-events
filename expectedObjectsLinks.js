@@ -193,7 +193,7 @@ window.expectedTealiumLinkObjects = [
   "eventLabel": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
   "noChanges": 0,
   "sClassOutbound": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
-  "sOutboundTime": /^\(d{2}:\d{2}|undefined|null)$/,
+  "sOutboundTime": /^\d{2}:\d{2}|(undefined|null)$/,
   "sOutboundArrivalTime": /^\d{2}:\d{2}$/,
   "sOutboundConnectionCode": /^(null|undefined)$/,
   "sOutboundConnectionOperator": /^(null|undefined)$/,
