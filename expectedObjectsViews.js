@@ -265,7 +265,7 @@ window.expectedTealiumViewObjects = [
 	product_train_departuretime: [/^\d{2}:\d{2}$/],
         product_train_fbccode: [/^.+$/],
         product_train_number: [/^\d+$/],
-        product_variant: [/^(outbound|inbound)$/"],
+        product_variant: [/^(outbound|inbound)$/],
 	product_hotel_origin_code: [/^(\d+|null|unudefined)$/],
         product_hotel_destination_code: [/^(\d+|null|unudefined)$/],
         product_hotel_occupancy: [/^(\d+|null|unudefined)$/],
