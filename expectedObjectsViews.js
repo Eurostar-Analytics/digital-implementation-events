@@ -49,7 +49,7 @@ window.expectedTealiumViewObjects = [
     product_price_inpoints: [/^\d+$/],
     product_brand: [/^[A-Z]{2}$/], // e.g., ES, ER
     product_category: ["trains"],
-    product_variant: ["outbound"],
+    product_variant: [/^(outbound|inbound)$/],
     product_departure_date: [/^\d{4}-\d{2}-\d{2}$/],
     product_return_date: [], // optional
     product_train_class: [/^Eurostar (Standard|Plus|Premier)$/],
@@ -70,7 +70,7 @@ window.expectedTealiumViewObjects = [
     product_train_fare_type: [/^(ES_ER|ER_SN|null)?$/],
     product_total_journey_length: [/^\d+$/],
     product_train_journey_length: [/^\d+$/],
-    page_name: "SearchResults"
+    page_name: /^SearchResult(\/Inbound)?$/
   },
   {
 	app_platform: "ReactJS",
