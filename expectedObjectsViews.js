@@ -273,7 +273,7 @@ window.expectedTealiumViewObjects = [
         product_hotel_review_count: [/^(\d+|null|unudefined)$/],
         product_hotel_review_score: [/^(\d+|null|unudefined)$/],
         product_hotel_room_extra: [/^(\d+|null|unudefined)$/],
-	product_return_date: [/^(\d+|null|unudefined)$/],
+	product_return_date: [/^(\d{4}-\d{2}-\d{2}|null|unudefined)$/],
         product_train_class: ["Eurostar Plus"],
         product_train_route: ["london route"],
         product_train_origin_stationcode: [/^\d{7}$/],
