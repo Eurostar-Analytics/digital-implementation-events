@@ -63,7 +63,7 @@ window.expectedTealiumViewObjects = [
     product_train_numberofconnections: [/^\d+$/],
     product_train_connectionoperator: [/^(null|Eurostar|SNCF)?$/],
     product_train_tickettype: [/^(ESTAR_PUB_(STD|PLUS|PREM)|SNCF1SF|RED_ESTAR_PUB_PLUS|null)$/],
-    product_train_passenger_type: ["adult"],
+    product_train_passenger_type: [/^(adult|null)$/],
     product_train_sale_tag: [/^(lowest fare|limited seats.*|null)?$/],
     product_travel_date: [/^\d{4}-\d{2}-\d{2}$/],
     product_train_fare_name: [/^(through fare|null)?$/],
