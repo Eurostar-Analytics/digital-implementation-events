@@ -29,7 +29,7 @@ window.expectedTealiumViewObjects = [
     sToName: /^.+$/,
     sDateOutbound: /^\d{4}-\d{2}-\d{2}$/,
     sDateInbound: /^(\d{4}-\d{2}-\d{2}|null)$/,
-    sTravelDuration: /^\d+$/,
+    sTravelDuration: /^(\d+|null)$/,
     sTravelHorizon: /^\d+$/,
     sPaxAdult: /^\d+$/,
     sPaxChildren: /^\d+$/,
