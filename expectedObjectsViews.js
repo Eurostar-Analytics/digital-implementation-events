@@ -51,7 +51,7 @@ window.expectedTealiumViewObjects = [
     product_category: ["trains"],
     product_variant: [/^(outbound|inbound)$/],
     product_departure_date: [/^\d{4}-\d{2}-\d{2}$/],
-    product_return_date: [], // optional
+    product_return_date: [/^(\d{4}-\d{2}-\d{2})?$/],
     product_train_class: [/^Eurostar (Standard|Plus|Premier)$/],
     product_train_route: [/^(london route|continent route)$/],
     product_train_origin_stationcode: [/^\d{7}$/],
