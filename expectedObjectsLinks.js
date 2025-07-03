@@ -282,7 +282,7 @@ window.expectedTealiumLinkObjects = [
   "eventAction": "Open Inbound Fare Details",
   "eventCategory": "Train Selection",
   "eventLabel": /^Eurostar (Standard|Plus|Premier)$/,
-  "noChanges": /^(0|null|undefined)$/,,
+  "noChanges": /^(0|null|undefined)$/,
   "sClassInbound": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
   "sInboundTime": /^\d{2}:\d{2}$/,
   "sInboundArrivalTime": /^\d{2}:\d{2}$/,
