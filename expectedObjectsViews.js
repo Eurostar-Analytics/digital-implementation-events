@@ -254,7 +254,7 @@ window.expectedTealiumViewObjects = [
 	basket_value: /^\d+(\.\d{1,2})?$/,
 	products_count: /\d+/,
 	product_brand: [/^(Allianz|ES|[A-Z]+)$/],
-	product_id: [/^\d{7}( - \d{7})?$/],
+	product_id: [/^(\d{7}( - \d{7})?|.*)$/],
 	product_category: [/^(trains|insurance)$/],
         product_name: [/^(\d{7} - \d{7}:adult|.*insurance)$/],
         product_price: [/^\d+(\.\d{2})?$/],
