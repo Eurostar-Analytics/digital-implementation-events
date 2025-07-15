@@ -793,12 +793,49 @@ event: "TealiumLink"
 	page_name: "BookingConfirmation",
 	page_category: "BookingConfirmation",
 	eventCategory: "Error",
-	eventLabel: "CodeMismatchException",
-	errorMessage: "Code not recognised",
-	formName: "checkout-verification-modal",
+	eventLabel: /^(.*)$/,
+	errorMessage: /^(.*)$/,
+	formName: "checkout",
 	eventName: "ErrorEvent",
 	event: "TealiumLink"
 },
+{
+	eventAction: "Verification",
+	currency: "GBP",
+	funnel_name: "Trains",
+	page_name: "BookingConfirmation",
+	page_category: "BookingConfirmation",
+	eventCategory: "Overlay",
+	eventLabel: "Verify Click",
+	formName: "checkout",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
+	eventAction: "Verification",
+	currency: "GBP",
+	funnel_name: "Trains",
+	page_name: "BookingConfirmation",
+	page_category: "BookingConfirmation",
+	eventCategory: "Overlay",
+	eventLabel: "Verify Success",
+	formName: "checkout",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
+	eventAction: "Register",
+	currency: "GBP",
+	funnel_name: "Trains",
+	page_name: "BookingConfirmation",
+	page_category: "BookingConfirmation",
+	eventCategory: "Sign Up Now",
+	eventLabel: "Register success",
+	formName: "checkout",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+	
   {
     "event": "TealiumLink",
     "eventName": "InteractionEvent",
