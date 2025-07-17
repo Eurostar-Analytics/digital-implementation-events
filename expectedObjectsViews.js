@@ -224,7 +224,7 @@ window.expectedTealiumViewObjects = [
         customer_is_admin: /(true|false|null)/,
         businessID: /^(null|undefined|[\w-]*)$/,
         loyaltyTier: /^(Classique|Carte Blanche|Avantage|Etoile|Silver|Gold|null)$/,
-	membershipID: /^.{0,17}$/,
+	membershipID: /^\d{17}$/,
         membershipDetails: /^.{0,100}$/,
         pointsToSpend: /\d*/,
         pointsToUpgrade: /\d*/,
@@ -298,7 +298,7 @@ window.expectedTealiumViewObjects = [
         customer_is_admin: /(true|false|null)/,
         businessID: /^(null|undefined|[\w-]*)$/,
         loyaltyTier: /^(Classique|Carte Blanche|Avantage|Etoile|Silver|Gold|null)$/,
-	membershipID: /^.{0,17}$/,
+	membershipID: /^\d{17}$/,
         membershipDetails: /^.{0,100}$/,
 	pointsToSpend: /\d*/,
         pointsToUpgrade: /\d*/,
@@ -402,5 +402,158 @@ window.expectedTealiumViewObjects = [
     	pointsToUpgrade: /^\d+|null$/,
 	mktOptions: /^(true|false)$/,
 	page_name: /^Bookings\/(Upcoming|Past|Cancelled)Bookings$/
-}	
+},
+	{
+	event: "TealiumView",
+	app_name: "OneCheckout",
+	app_platform: "ReactJS",
+	app_type: "web",
+	currency: /^[A-Z]{3}$/,
+	funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
+	language: "en",
+	market: "uk",
+	page_category: /^(Upgrade|Exchange)$/,
+	isLoggedIn: "true",
+	customer_is_admin: "false",
+	businessID: /^(null|undefined|[\w-]*)$/,
+	customer_hashedemail: /^[a-f0-9]{64}$/,
+	loyaltyTier: /^(Classique|Carte Blanche|Avantage|Etoile|Silver|Gold|null)$/,
+	membershipID: /^\d{17}$/,
+	ld_version: "design-system",
+	eventName: "ImpressionEcommerceEvent",
+	ecommerce_action: "purchase",
+	eventCategory: "Ecommerce",
+	eventAction: "Purchase",
+	eventLabel: /^Train booking\:regular (upgrade|exchange)$/,
+	eventNonInteraction: true,
+	pnr: "FGWJTJ",
+	order_id: "20250717FGWJTJ:upgrade",
+	order_revenue: "20.00",
+	order_revenue_inpoints: 0,
+	purchase_hashedemail: "df587f02bb407951928a72175a7ddea2f70ccd73918a95be490c7c79dbbacc24",
+	pointsOrRegular: "regular booking",
+	transactionType: "regular upgrade",
+	paymentDetails: "SavedCard",
+	paymentCardType: "visa",
+	payment_status: "confirmed",
+	loyalty_points_discount_usage: "false",
+	loyalty_points_discount_value: null,
+	voucher_usage: "No",
+	voucher_code: undefined,
+	voucher_value: null,
+	discount_code: undefined,
+	discount_value: null,
+	directOrConnection: "direct",
+	sJourneyType: "Return",
+	sFromCode: "7015400",
+	sFromName: "London St Pancras Int'l",
+	sToCode: "8727100",
+	sToName: "Paris Gare du Nord",
+	sDateOutbound: "2025-07-28",
+	sDateInbound: "2025-07-30",
+	sTravelHorizon: 11,
+	sTravelDuration: 2,
+	sPaxTotal: 1,
+	sPaxAdult: 1,
+	sPaxCompanion: 0,
+	sPaxChildren: 0,
+	sPaxSenior: 0,
+	sPaxYouth: 0,
+	products_count: 2,
+	product_name: [
+		7015400 - 8727100:adult",
+		8727100 - 7015400:adult"
+	],
+	product_id: [
+		"7015400 - 8727100",
+		"8727100 - 7015400"
+	],
+	product_quantity: [
+		1,
+		1
+	],
+	product_price: [
+		"0",
+		"0"
+	],
+	product_price_inpoints: [
+		0,
+		0
+	],
+	product_brand: [
+		"ES",
+		"ES"
+	],
+	product_category: [
+		"trains",
+		"trains"
+	],
+	product_variant: [
+		"outbound",
+		"inbound"
+	],
+	product_departure_date: [
+		"2025-07-28",
+		null
+	],
+	product_return_date: [
+		null,
+		"2025-07-30"
+	],
+	product_train_class: [
+		"Eurostar Plus",
+		"Eurostar Standard"
+	],
+	product_train_route: [
+		"london route",
+		"london route"
+	],
+	product_train_origin_stationcode: [
+		"7015400",
+		"8727100"
+	],
+	product_train_destination_stationcode: [
+		"8727100",
+		"7015400"
+	],
+	product_train_number: [
+		"9004",
+		"9007"
+	],
+	product_train_fbccode: [
+		"H19PSXARBGN",
+		"B18PSXARBGN"
+	],
+	product_train_departuretime: [
+		07:01",
+		07:00"
+	],
+	product_train_arrivaltime: [
+		10:29",
+		08:30"
+	],
+	product_train_numberofconnections: [
+		1,
+		1
+	],
+	product_train_connectioncode: [],
+	product_train_connectionoperator: [],
+	product_train_tickettype: [
+		"ESTAR_PUB_PLUS",
+		"ESTAR_PUB_STD"
+	],
+	product_train_passenger_type: [
+		"adult",
+		"adult"
+	],
+	product_train_fare_name: [],
+	product_train_fare_type: [],
+	product_hotel_destination_code: [],
+	product_hotel_starrating: [],
+	product_cancellation_policy: [
+		null,
+		null
+	],
+	page_name: /^(Upgrade|Exchange)?(\/)?BookingConfirmation$/
+}
 ];
