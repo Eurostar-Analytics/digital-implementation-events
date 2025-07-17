@@ -854,7 +854,14 @@ event: "TealiumLink"
 	eventName: "InteractionEvent",
 	event: "TealiumLink"
 },
-	
+{
+	eventCategory: "MYB interaction",
+	eventAction: "Click",
+	eventLabel: "Upgrade Booking",
+	interactionSection: "action menu",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},	
   {
     "event": "TealiumLink",
     "eventName": "InteractionEvent",
