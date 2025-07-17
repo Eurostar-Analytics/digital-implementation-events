@@ -401,7 +401,7 @@ window.expectedTealiumViewObjects = [
 	pointsToSpend: /^\d+$/,
     	pointsToUpgrade: /^\d+|null$/,
 	mktOptions: /^(true|false)$/,
-	page_name: /^Bookings\/(Upcoming|Past|Cancelled)Bookings)$/
+	page_name: /^Bookings\/(Upcoming|Past|Cancelled)Bookings$/
 },
 {
 	event: "TealiumView",
@@ -416,7 +416,7 @@ window.expectedTealiumViewObjects = [
 	pointsToSpend: /^\d+$/,
     	pointsToUpgrade: /^\d+|null$/,
 	mktOptions: /^(true|false)$/,
-	page_name: /^SpendPoints|ClubLevels|ClubVouchers|PartnerOffers|PointsStatement|ClaimMissingPoints|SharePoints)$/
+	page_name: /^(SpendPoints|ClubLevels|ClubVouchers|PartnerOffers|PointsStatement|ClaimMissingPoints|SharePoints)$/
 },
 {
 	event: "TealiumView",
