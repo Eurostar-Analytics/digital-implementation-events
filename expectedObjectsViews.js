@@ -401,6 +401,6 @@ window.expectedTealiumViewObjects = [
 	pointsToSpend: /^\d+$/,
     	pointsToUpgrade: /^\d+|null$/,
 	mktOptions: /^(true|false)$/,
-	page_name: "Bookings/UpcomingBookings"
+	page_name: /^Bookings\/(Upcoming|Past|Cancelled)Bookings$/
 }	
 ];
