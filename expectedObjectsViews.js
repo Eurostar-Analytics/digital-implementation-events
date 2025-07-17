@@ -555,5 +555,21 @@ window.expectedTealiumViewObjects = [
 		null
 	],
 	page_name: /^(Upgrade|Exchange)?(\/)?BookingConfirmation$/
+},
+{
+	event: "TealiumView",
+	funnel_name: "ManageBooking",
+	page_category: "RetrieveBooking",
+	isLoggedIn: "true",
+	customer_hashedemail: /^[a-f0-9]{64}$/,
+	customer_is_admin: "false",
+	businessID: /^(null|undefined|[\w-]*)$/,
+	loyaltyTier: /^(Classique|Carte Blanche|Avantage|Etoile|Silver|Gold|null)$/,
+	membershipID: /^\d{17}$/,
+	membershipDetails: /^(.*)$/,
+	pointsToSpend: /^\d+$/,
+    	pointsToUpgrade: /^\d+|null$/,
+	mktOptions: /^(true|false)$/,
+	page_name: "RetrieveYourBooking"
 }
 ];
