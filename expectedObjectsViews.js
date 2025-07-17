@@ -401,7 +401,53 @@ window.expectedTealiumViewObjects = [
 	pointsToSpend: /^\d+$/,
     	pointsToUpgrade: /^\d+|null$/,
 	mktOptions: /^(true|false)$/,
-	page_name: /^Bookings\/(Upcoming|Past|Cancelled)Bookings$/
+	page_name: /^Bookings\/(Upcoming|Past|Cancelled)Bookings)$/
+},
+{
+	event: "TealiumView",
+	page_category: "Loyalty Membership",
+	isLoggedIn: "true",
+	customer_hashedemail: /^[a-f0-9]{64}$/,
+	customer_is_admin: "false",
+	businessID: /^(null|undefined|[\w-]*)$/,
+	loyaltyTier: /^(Classique|Carte Blanche|Avantage|Etoile|Silver|Gold|null)$/,
+	membershipID: /^\d{17}$/,
+	membershipDetails: /^(.*)$/,
+	pointsToSpend: /^\d+$/,
+    	pointsToUpgrade: /^\d+|null$/,
+	mktOptions: /^(true|false)$/,
+	page_name: /^SpendPoints|ClubLevels|ClubVouchers|PartnerOffers|PointsStatement|ClaimMissingPoints|SharePoints)$/
+},
+{
+	event: "TealiumView",
+	page_category: "Settings",
+	isLoggedIn: "true",
+	customer_hashedemail: /^[a-f0-9]{64}$/,
+	customer_is_admin: "false",
+	businessID: /^(null|undefined|[\w-]*)$/,
+	loyaltyTier: /^(Classique|Carte Blanche|Avantage|Etoile|Silver|Gold|null)$/,
+	membershipID: /^\d{17}$/,
+	membershipDetails: /^(.*)$/,
+	pointsToSpend: /^\d+$/,
+    	pointsToUpgrade: /^\d+|null$/,
+	mktOptions: /^(true|false)$/,
+	page_name: /^Settings\/(YourDetails|AdvancePassengerInformation|ChangeEmail|PasswordAndSecurity|CommunicationPreferences|PaymentCards|AccountOptions|SavedPassengers)$/
+},
+
+{
+	event: "TealiumView",
+	page_category: "SubscriptionPasses",
+	isLoggedIn: "true",
+	customer_hashedemail: /^[a-f0-9]{64}$/,
+	customer_is_admin: "false",
+	businessID: /^(null|undefined|[\w-]*)$/,
+	loyaltyTier: /^(Classique|Carte Blanche|Avantage|Etoile|Silver|Gold|null)$/,
+	membershipID: /^\d{17}$/,
+	membershipDetails: /^(.*)$/,
+	pointsToSpend: /^\d+$/,
+    	pointsToUpgrade: /^\d+|null$/,
+	mktOptions: /^(true|false)$/,
+	page_name: /^SubscriptionPasses\/(Current|Past)$/
 },
 	{
 	event: "TealiumView",
