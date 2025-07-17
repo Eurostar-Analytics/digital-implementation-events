@@ -178,7 +178,7 @@ window.expectedTealiumViewObjects = [
   products_count: /^\d+$/,
   product_status: [/^(past|upcoming)$/],
   product_name: [/^\d{7} - \d{7}(:adult)|(Cancellation|Comprehensive) insurance?$/],
-  product_id: [/^\d{7} - \d{7}|[[:alnum:]]\d$/],
+  product_id: [/^(?:\d{7} - \d{7}|[[:alnum:]]+)$/],
   product_quantity: [/^\d+$/],
   product_price: [/^\d+\.\d{2}$/],
   product_brand: [/^[A-Z]{2}|Allianz$/],
