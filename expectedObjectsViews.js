@@ -461,8 +461,8 @@ window.expectedTealiumViewObjects = [
 	sPaxYouth: 0,
 	products_count: 2,
 	product_name: [
-		7015400 - 8727100:adult",
-		8727100 - 7015400:adult"
+		"7015400 - 8727100:adult",
+		"8727100 - 7015400:adult"
 	],
 	product_id: [
 		"7015400 - 8727100",
@@ -525,12 +525,12 @@ window.expectedTealiumViewObjects = [
 		"B18PSXARBGN"
 	],
 	product_train_departuretime: [
-		07:01",
-		07:00"
+		"07:01",
+		"07:00"
 	],
 	product_train_arrivaltime: [
-		10:29",
-		08:30"
+		"10:29",
+		"08:30"
 	],
 	product_train_numberofconnections: [
 		1,
