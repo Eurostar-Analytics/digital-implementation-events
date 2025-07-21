@@ -18,7 +18,7 @@ window.expectedTealiumViewObjects = [
     pointsOrRegular: /^(regular booking|points booking)$/,
     numberOfResults: /^\d+$/,
     numberOfTrainsAvailable: /^\d+$/,
-    sOutboundLowestFare: /^\d+$/,
+    sOutboundLowestFare: /^(\d+|null)$/,
     sInboundLowestFare: /^(\d+|null)$/,
     numberOfSalesTagsAvailable: /^\d+$/,
     directOrConnection: /^(direct|connection|mixed)$/,
