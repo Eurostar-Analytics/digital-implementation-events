@@ -573,8 +573,8 @@ event: "TealiumLink"
             page_category: "Checkout",
             ld_version: "design-system",
             eventCategory: "Checkout Interaction",
-            paymentDetails: "Card",
-            paymentCardType: ["mc", "visa", "jcb", "diners", "discover"],
+            paymentDetails: /^(SavedCard|Card)$/,
+            paymentCardType: /^(mc|visa|jcb|diners|discover)$/,
             eventLabel: "Card Payment",
             eventName: "InteractionEvent",
             event: "TealiumLink"
