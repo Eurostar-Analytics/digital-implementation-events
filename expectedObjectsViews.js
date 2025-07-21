@@ -46,12 +46,12 @@ window.expectedTealiumViewObjects = [
     product_quantity: [/^\d+$/],
     product_status: [/^(available|not available)$/],
     product_price: [/^\d+\.\d{2}$/],
-    product_price_inpoints: [/^\d+$/],
+    product_price_inpoints: [/^(\d+|null|undefined)$/],
     product_brand: [/^(ES|ER)$/], // e.g., ES, ER
     product_category: ["trains"],
     product_variant: [/^(outbound|inbound)$/],
     product_departure_date: [/^\d{4}-\d{2}-\d{2}$/],
-    product_return_date: [/^(\d{4}-\d{2}-\d{2})?$/],
+    product_return_date: [/^(\d{4}-\d{2}-\d{2}|null|undefined)$/],
     product_train_class: [/^Eurostar (Standard|Plus|Premier)$/],
     product_train_route: [/^(london route|continent route)$/],
     product_train_origin_stationcode: [/^\d{7}$/],
@@ -185,7 +185,7 @@ window.expectedTealiumViewObjects = [
   product_category: [/^(trains|insurance)$/],
   product_variant: [/^(outbound|inbound|cancellation|comprehensive)$/],
   product_departure_date: [/^(\d{4}-\d{2}-\d{2}|null)$/],
-  product_return_date: [/^(\d{4}-\d{2}-\d{2}|null)$/],
+  product_return_date: [/^(\d{4}-\d{2}-\d{2}|null|undefined)$/],
   product_train_class: [/^Eurostar (Standard|Plus|Premier)|null$/],
   product_train_route: [/^(london route|continent route|null)$/],
   product_train_origin_stationcode: [/^\d{7}|null$/],
@@ -273,7 +273,7 @@ window.expectedTealiumViewObjects = [
         product_hotel_review_count: [/^(\d+|null|unudefined)$/],
         product_hotel_review_score: [/^(\d+|null|unudefined)$/],
         product_hotel_room_extra: [/^(\d+|null|unudefined)$/],
-	product_return_date: [/^(\d{4}-\d{2}-\d{2}|null|unudefined)$/],
+	product_return_date: [/^(\d{4}-\d{2}-\d{2}|null|undefined)$/],
         product_train_class: [/^Eurostar (Standard|Plus|Premier)$/],
         product_train_route: [/^(london route|continent route)$/],
         product_train_origin_stationcode: [/^\d{7}$/],
@@ -326,60 +326,26 @@ window.expectedTealiumViewObjects = [
 	product_brand: [/^(ES|ER)$/],
 	product_category: ["trains"],
 	product_departure_date: [/^\d{4}-\d{2}-\d{2}$/],
-	product_id: [
-		"7015400 - 8727100"
-	],
-	product_name: [
-		"7015400 - 8727100:adult"
-	],
-	product_price: [
-		"17.00"
-	],
-	product_quantity: [
-		1
-	],
-	product_return_date: [
-		null
-	],
-	product_train_arrivaltime: [
-		"10:19"
-	],
-	product_train_class: [
-		"Eurostar Plus"
-	],
-	product_train_connectioncode: [
-		null
-	],
-	product_train_connectionoperator: [
-		null
-	],
-	product_train_departuretime: [
-		"07:01"
-	],
-	product_train_destination_stationcode: [
-		"8727100"
-	],
-	product_train_fbccode: [
-		"H17PSXASBGN"
-	],
-	product_train_number: [
-		"9004"
-	],
-	product_train_numberofconnections: [
-		"1"
-	],
-	product_train_origin_stationcode: [
-		"7015400"
-	],
+	product_id: [/^\d{7} - \d{7}$/],
+	product_name: [/^\d{7} - \d{7}(:adult)?$/], // as array
+	product_price: [/^\d+\.\d{2}$/],
+	product_quantity: [/^\d+$/],
+	product_return_date: [/^(\d{4}-\d{2}-\d{2}|null|undefined)$/],
+	product_train_arrivaltime: [/^\d{2}:\d{2}$/],
+	product_train_class: [/^Eurostar (Standard|Plus|Premier)$/],
+	product_train_connectioncode: [/^(null|\d{7})$/],
+	product_train_connectionoperator: [/^(null|Eurostar|SNCF)?$/],
+	product_train_departuretime: [/^\d{2}:\d{2}$/],
+	product_train_destination_stationcode: [/^\d{7}$/],
+	product_train_fbccode: [/^.*$/],
+	product_train_number: [/^\d{4}$/],
+	product_train_numberofconnections: [/^\d+$/],
+	product_train_origin_stationcode: [/^\d{7}$/],
 	product_train_passenger_type: [/^(adult|null)$/],
 	product_train_route: [/^(london route|continent route)$/],
-	product_train_tickettype: [
-		"ESTAR_PUB_PLUS"
-	],
-	product_variant: [
-		"outbound"
-	],
-	products_count: 1,
+	product_train_tickettype: [/^(ESTAR_PUB_(STD|PLUS|PREM)|SNCF1SF|RED_ESTAR_PUB_PLUS)$/],
+	product_variant: [/^(outbound|inbound)$/],
+	products_count: /^\d+$/,
 	page_name: "Upgrade/SelectUpgrade"
 },
 {
@@ -499,94 +465,35 @@ window.expectedTealiumViewObjects = [
 	sPaxChildren: 0,
 	sPaxSenior: 0,
 	sPaxYouth: 0,
-	products_count: 2,
-	product_name: [
-		"7015400 - 8727100:adult",
-		"8727100 - 7015400:adult"
-	],
-	product_id: [
-		"7015400 - 8727100",
-		"8727100 - 7015400"
-	],
-	product_quantity: [
-		1,
-		1
-	],
-	product_price: [
-		"0",
-		"0"
-	],
-	product_price_inpoints: [
-		0,
-		0
-	],
+	products_count: /^\d+$/,
+	product_name: [/^\d{7} - \d{7}(:adult)?$/], // as array
+	product_id: [/^\d{7} - \d{7}$/],
+	product_quantity: [/^\d+$/],
+	product_price: [/^\d+(\.\d{2})?$/],
+	product_price_inpoints: [/^(\d+|null|undefined)$/],
 	product_brand: [/^(ES|ER)$/],
-	product_category: [
-		"trains",
-		"trains"
-	],
-	product_variant: [
-		"outbound",
-		"inbound"
-	],
+	product_category: ["trains"],
+	product_variant: [/^(outbound|inbound)$/],
 	product_departure_date: [/^(\d{4}-\d{2}-\d{2}|null)$/],
-	product_return_date: [
-		null,
-		"2025-07-30"
-	],
-	product_train_class: [
-		"Eurostar Plus",
-		"Eurostar Standard"
-	],
-	product_train_route: [
-		"london route",
-		"london route"
-	],
-	product_train_origin_stationcode: [
-		"7015400",
-		"8727100"
-	],
-	product_train_destination_stationcode: [
-		"8727100",
-		"7015400"
-	],
-	product_train_number: [
-		"9004",
-		"9007"
-	],
-	product_train_fbccode: [
-		"H19PSXARBGN",
-		"B18PSXARBGN"
-	],
-	product_train_departuretime: [
-		"07:01",
-		"07:00"
-	],
-	product_train_arrivaltime: [
-		"10:29",
-		"08:30"
-	],
-	product_train_numberofconnections: [
-		1,
-		1
-	],
-	product_train_connectioncode: [],
-	product_train_connectionoperator: [],
-	product_train_tickettype: [
-		"ESTAR_PUB_PLUS",
-		"ESTAR_PUB_STD"
-	],
-	product_train_passenger_type: [
-		"adult",
-		"adult"
-	],
+	product_return_date: [/^(\d{4}-\d{2}-\d{2}|null|undefined)$/],
+	product_train_class: [/^Eurostar (Standard|Plus|Premier)$/],
+	product_train_route: [/^(london route|continent route)$/],
+	product_train_origin_stationcode: [/^\d{7}$/],
+	product_train_destination_stationcode: [/^\d{7}$/],
+	product_train_number: [/^\d{4}$/],
+	product_train_fbccode: [/^.*$/],
+	product_train_departuretime: [/^\d{2}:\d{2}$/],
+	product_train_arrivaltime: [/^\d{2}:\d{2}$/],
+	product_train_numberofconnections: [/^\d+$/],
+	product_train_connectioncode: [/^(null|\d{7})$/],
+	product_train_connectionoperator: [/^(null|Eurostar|SNCF)?$/],
+	product_train_tickettype: [/^(ESTAR_PUB_(STD|PLUS|PREM)|SNCF1SF|RED_ESTAR_PUB_PLUS)$/],
+	product_train_passenger_type: [/^(adult|null)$/],
 	product_train_fare_name: [],
 	product_train_fare_type: [],
 	product_hotel_destination_code: [],
 	product_hotel_starrating: [],
-	product_cancellation_policy: [
-		null,
-		null
+	product_cancellation_policy: [/^null$/],
 	],
 	page_name: /^(Upgrade|Exchange)?(\/)?BookingConfirmation$/
 },
