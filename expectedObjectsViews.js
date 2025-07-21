@@ -494,7 +494,6 @@ window.expectedTealiumViewObjects = [
 	product_hotel_destination_code: [],
 	product_hotel_starrating: [],
 	product_cancellation_policy: [/^null$/],
-	],
 	page_name: /^(Upgrade|Exchange)?(\/)?BookingConfirmation$/
 },
 {
