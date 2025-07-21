@@ -47,7 +47,7 @@ window.expectedTealiumViewObjects = [
     product_status: [/^(available|not available)$/],
     product_price: [/^\d+\.\d{2}$/],
     product_price_inpoints: [/^\d+$/],
-    product_brand: [/^[A-Z]{2}$/], // e.g., ES, ER
+    product_brand: [/^(ES|ER)$/], // e.g., ES, ER
     product_category: ["trains"],
     product_variant: [/^(outbound|inbound)$/],
     product_departure_date: [/^\d{4}-\d{2}-\d{2}$/],
@@ -181,7 +181,7 @@ window.expectedTealiumViewObjects = [
   product_id: [/^(?:\d{7} - \d{7}|[A-Za-z0-9]+)$/],
   product_quantity: [/^\d+$/],
   product_price: [/^\d+\.\d{2}$/],
-  product_brand: [/^[A-Z]{2}|Allianz$/],
+  product_brand: [/^(ES|ER|Allianz)$/],
   product_category: [/^(trains|insurance)$/],
   product_variant: [/^(outbound|inbound|cancellation|comprehensive)$/],
   product_departure_date: [/^(\d{4}-\d{2}-\d{2}|null)$/],
@@ -253,7 +253,7 @@ window.expectedTealiumViewObjects = [
         club_eurostar_discount: /(\d+|none|member)/,
 	basket_value: /^\d+(\.\d{1,2})?$/,
 	products_count: /\d+/,
-	product_brand: [/^(Allianz|ES|[A-Z]+)$/],
+	product_brand: [/^(Allianz|ES|ER)$/],
 	product_id: [/^(\d{7}( - \d{7})?|.*)$/],
 	product_category: [/^(trains|insurance)$/],
         product_name: [/^(\d{7} - \d{7}:adult|.*insurance)$/],
@@ -305,7 +305,7 @@ window.expectedTealiumViewObjects = [
 	mktOptions: /^(true|false)$/,
 	pnr: /^[A-Z0-9]{6}$/, 
 	purchase_hashedemail: /^.{0,64}$/,
-	transaction_date: /^[\d-]{10}$/,
+	transaction_date: /^[\d-]{8}$/,
 	sFromCode: /^\d{7}$/,
         sFromName: /.+/,
         sToCode: /^\d{7}$/,
@@ -315,7 +315,7 @@ window.expectedTealiumViewObjects = [
 	sDateOutbound: /^$|undefined|\d{4}-\d{2}-\d{2}$/,
         sDateInbound: /^$|undefined|^\d{4}-\d{2}-\d{2}$/,
 	sTravelHorizon: /\d+/,
-        sTravelDuration: null,
+        sTravelDuration: /^(\d+|null)$/,
         sPaxTotal: /\d+/,
         sPaxAdult: /\d+/,
         sPaxChildren: /\d+/,
@@ -323,15 +323,9 @@ window.expectedTealiumViewObjects = [
         sPaxSenior: /\d+/,
         sPaxYouth: /\d+/,
         sPaxCompanion: /\d+/,
-	product_brand: [
-		"ES"
-	],
-	product_category: [
-		"trains"
-	],
-	product_departure_date: [
-		"2025-07-03"
-	],
+	product_brand: [/^(ES|ER)$/],
+	product_category: ["trains"],
+	product_departure_date: [/^\d{4}-\d{2}-\d{2}$/],
 	product_id: [
 		"7015400 - 8727100"
 	],
@@ -454,7 +448,7 @@ window.expectedTealiumViewObjects = [
 	app_name: "OneCheckout",
 	app_platform: "ReactJS",
 	app_type: "web",
-	currency: /^[A-Z]{3}$/,
+	currency: /^(GBP|EUR|USD)$/,
 	funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
 	language: "en",
 	market: "uk",
@@ -472,12 +466,12 @@ window.expectedTealiumViewObjects = [
 	eventAction: "Purchase",
 	eventLabel: /^Train booking\:regular (upgrade|exchange)$/,
 	eventNonInteraction: true,
-	pnr: "FGWJTJ",
+	pnr: /^[A-Z0-9]{6}$/, 
 	order_id: "20250717FGWJTJ:upgrade",
 	order_revenue: "20.00",
 	order_revenue_inpoints: 0,
 	purchase_hashedemail: "df587f02bb407951928a72175a7ddea2f70ccd73918a95be490c7c79dbbacc24",
-	pointsOrRegular: "regular booking",
+	pointsOrRegular: /^(regular booking|points booking)$/,
 	transactionType: "regular upgrade",
 	paymentDetails: "SavedCard",
 	paymentCardType: "visa",
@@ -526,10 +520,7 @@ window.expectedTealiumViewObjects = [
 		0,
 		0
 	],
-	product_brand: [
-		"ES",
-		"ES"
-	],
+	product_brand: [/^(ES|ER)$/],
 	product_category: [
 		"trains",
 		"trains"
@@ -538,10 +529,7 @@ window.expectedTealiumViewObjects = [
 		"outbound",
 		"inbound"
 	],
-	product_departure_date: [
-		"2025-07-28",
-		null
-	],
+	product_departure_date: [/^(\d{4}-\d{2}-\d{2}|null)$/],
 	product_return_date: [
 		null,
 		"2025-07-30"
@@ -617,5 +605,27 @@ window.expectedTealiumViewObjects = [
     	pointsToUpgrade: /^\d+|null$/,
 	mktOptions: /^(true|false)$/,
 	page_name: "RetrieveYourBooking"
-}
+},
+{
+	event: "TealiumView",
+	funnel_name: "ManageBooking",
+	page_category: "Exchange",
+	currency: /^(GBP|EUR|USD)$/,
+	isLoggedIn: "true",
+	customer_hashedemail: /^[a-f0-9]{64}$/,
+	customer_is_admin: "false",
+	businessID: /^(null|undefined|[\w-]*)$/,
+	loyaltyTier: /^(Classique|Carte Blanche|Avantage|Etoile|Silver|Gold|null)$/,
+	membershipID: /^\d{17}$/,
+	membershipDetails: /^(.*)$/,
+	pointsToSpend: /^\d+$/,
+    	pointsToUpgrade: /^\d+|null$/,
+	mktOptions: /^(true|false)$/,
+	pnr: /^[A-Z0-9]{6}$/, 
+	pointsOrRegular: /^(regular booking|points booking)$/,
+	purchase_hashedemail: /^.{0,64}$/,
+	transaction_date: /^[\d-]{10}$/,
+	activityType: "train exchange",
+	page_name: "Exchange/SelectTravelDates"
+}	
 ];
