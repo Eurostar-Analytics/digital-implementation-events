@@ -627,7 +627,7 @@ window.expectedTealiumViewObjects = [
 	pnr: /^[A-Z0-9]{6}$/, 
 	pointsOrRegular: /^(regular booking|points booking)$/,
 	purchase_hashedemail: /^.{0,64}$/,
-	transaction_date: /^[\d-]{10}$/,
+	transaction_date: /^[\d+]{8}$/,
 	activityType: "train exchange",
 	page_name: "Exchange/SelectTravelDates"
 },
