@@ -162,7 +162,7 @@ window.expectedTealiumViewObjects = [
 	hHotelPackageSavings: [/^\d+$/],
 	hHotelPriceAllPassengers: [/^\d+$/],
 	hHotelReviewCount: [/^\d+$/],
-	hHotelReviewScore: [/^(\d.\d)|null$/],
+	hHotelReviewScore: [/^\d(.\d)?|null$/],
 	hHotelStarRating: [/^\d$/],
 	hHotelSalesTag: [/^.*$/],
 	package_searchresults: /^.*$/,
