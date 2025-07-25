@@ -190,7 +190,7 @@ window.expectedTealiumLinkObjects = [
 {
   "eventAction": "Select Outbound",
   "eventCategory": "Train Selection",
-  "eventLabel": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
+  "eventLabel": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)(\|.*)?$/,
   "noChanges": /^(0|null|undefined)$/,
   "sClassOutbound": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
   "sOutboundTime": /^(\d{2}:\d{2}|undefined|null)$/, 
