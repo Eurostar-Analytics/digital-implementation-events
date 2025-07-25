@@ -237,7 +237,7 @@ window.expectedTealiumViewObjects = [
 	sOutboundTime: /^\d{2}:\d{2}$/,
 	sClassOutbound: /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)$/,
 	sTrainTarriffOutbound: /^[A-Z0-9]{11}$/,
-	funnel_name: "Trains",
+	funnel_name: /^(Trains|Packages)$/,
 	page_name: "TravelExtras"
 },
 	{
