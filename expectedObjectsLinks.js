@@ -342,7 +342,7 @@ window.expectedTealiumLinkObjects = [
   product_category: ["hotels"],
   product_variant: [/^.+$/],
   product_hotel_room_extra: [/^.+$/],
-  product_cancellation_policy: ["none"],
+  product_cancellation_policy: [/^full|none$/],
   eventName: "InteractionEvent",
   event: "TealiumLink"
 },
