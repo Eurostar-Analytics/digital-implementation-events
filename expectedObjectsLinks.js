@@ -856,7 +856,7 @@ event: "TealiumLink"
 {
 	eventAction: "Click",
 	eventCategory: "Lowest Fare Finder",
-	eventLabel: /^(Select Destination|Select Outbound Month)$/,
+	eventLabel: /^(Select Destination|Select Outbound Month|Select Journey Type)$/,
 	currency: /^(GBP|EUR|USD)$/,
 	sFromCode: /^\d{7}$/,
         sFromName: /.+/,
