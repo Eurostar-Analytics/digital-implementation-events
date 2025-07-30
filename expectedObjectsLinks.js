@@ -612,7 +612,19 @@ event: "TealiumLink"
         {"eventAction":/^Field (Start|Complete)$/,"currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.lastName","eventName":"InteractionEvent","event":"TealiumLink"},
         {"eventAction":/^Field (Start|Complete)$/,"currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.email","eventName":"InteractionEvent","event":"TealiumLink"},
         {"eventAction":/^Field (Start|Complete)$/,"currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.mobile","eventName":"InteractionEvent","event":"TealiumLink"},
-        {"eventAction":"Click","currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Newsletter","eventLabel":"Opt-Out","mktOptions":"false","eventName":"InteractionEvent","event":"TealiumLink"},
+        {
+		"eventAction":"Click",
+		"currency":/^(GBP|EUR|USD)$/,
+		"funnel_name":/^(Trains|Hotels|Packages)$/,
+		"page_name":"Checkout",
+		"page_category":"Checkout",
+		"ld_version":"design-system",
+		"eventCategory":"Newsletter",
+		"eventLabel":"Opt-Out",
+		"mktOptions":"false",
+		"eventName":"InteractionEvent",
+		"event":"TealiumLink"
+	},
         {"eventCategory":"Passenger detail","eventAction":"Contact details","eventLabel":"Save contact details:button","eventName":"InteractionEvent","event":"TealiumLink"},
         {
             eventAction: "Validation Error",
