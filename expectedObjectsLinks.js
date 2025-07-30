@@ -43,40 +43,14 @@ window.expectedTealiumLinkObjects = [
   "eventCategory": "Internal Promotion",
   "eventAction": "Impression",
   "eventNonInteraction": "true",
-  "eventLabel": "PromoRow_02",
-  "promotion_id": /\s.*\s/,
-  "promotion_name": /\s.*\s/,
-  "promotion_creative": /\s.*\s/,
-  "promotion_position": /\d{2}_\d{2}$/,
+  "eventLabel": /\s.*\s/,
+  "promotion_id": [/\s.*\s/],
+  "promotion_name": [/\s.*\s/],
+  "promotion_creative": [/\s.*\s/],
+  "promotion_position": [/\d{2}_\d{2}$/],
   "page_element_cta": /^.+$/,
   "eventName": "ImpressionEvent",
   "event": "TealiumLink"
-},
-{
-  "eventCategory": "Internal Promotion",
-  "eventAction": "Impression",
-  "eventNonInteraction": "true",
-  "eventLabel": "HeroCarousel_01",
-  "promotion_id": ['Hero Carousel'],
-  "promotion_name": /\s.*\s/,
-  "promotion_creative": /\s.*\s/,
-  "promotion_position": /\d{2}_\d{2}$/,
-  "page_element_cta": /^.+$/,
-  "eventName": "ImpressionEvent",
-  "event": "TealiumLink"
-},
-{
-	eventAction: "Impression",
-	eventCategory: "Internal Promotion",
-	promotion_name: /\s.*\s/,
-	promotion_position: /\d{2}_\d{2}$/,
-	page_element_cta: /^.+$/,
-	eventLabel: "Disruption",
-	promotion_id: ["Disruption"],
-	promotion_creative: /\s?.*\s?/,
-	eventNonInteraction: true,
-	eventName: "ImpressionEvent",
-	event: "TealiumLink"
 },	
 {
 	"eventAction": "Click",
@@ -551,7 +525,6 @@ event: "TealiumLink"
 	"event":"TealiumLink"
 },
         {"event":"TealiumView","page_category":"Bookings","isLoggedIn":"true","customer_hashedemail":"52296546df7b53c4242e0ecae775f6bf3c3aa919387cd39c0979fe1a9d5b8b3a","customer_is_admin":"false","loyaltyTier":"Etoile","membershipID":"30838110000069353","membershipDetails":"Points: 1363811; Points to upgrade: N/A","pointsToSpend":1363811,"pointsToUpgrade":null,"subscriptionType":"premium-pass","subscriptionDuration":6,"subscriptionRemainingDuration":134,"mktOptions":"false","page_name":"Bookings/UpcomingBookings"},
-        {"eventAction":"Impression","eventCategory":"Internal Promotion","eventLabel":"Dynamic Promo Banner","eventNonInteraction":true,"promotion_id":/^(.*)$/,"promotion_name":/^(.*)$/,"promotion_position":["00_01"],"promotion_creative":/^(.*)$/,"page_element_cta":/^(.*)$/,"eventName":"ImpressionEvent","event":"TealiumLink"},
         {"eventAction":"Click","eventCategory":"Bookings","eventLabel":"View Booking","eventName":"InteractionEvent","event":"TealiumLink"},
         {
             eventAction: "Click",
