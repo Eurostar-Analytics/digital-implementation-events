@@ -568,14 +568,13 @@ event: "TealiumLink"
         {
             eventAction: "Form Submission",
             currency: /^(GBP|EUR|USD)$/,
-            funnel_name: /^Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap$/,
+            funnel_name: /^(Login|CustomerDashboard|Trains|Hotels|Packages|Subscriptions|ManageBooking|BusinessDashboard|Snap)$/,
             page_name: "Checkout",
             page_category: "Checkout",
             ld_version: "design-system",
             eventCategory: "Checkout Interaction",
-            paymentDetails: /^(SavedCard|Card)$/,
-            paymentCardType: /^(mc|visa|jcb|diners|discover)$/,
-            eventLabel: "Card Payment",
+            paymentDetails: /^(SavedCard|Card|ApplePay|GooglePay|iDEAL|PayPal|Sofort|Invoice|Card\|Loyalty_Points|Card\|Voucher|Billie|Klarna_BNPL)$/,
+            paymentCardType: /^(mc|visa|amex|cartebancaire|jcb|diners|discover)$/,
             eventName: "InteractionEvent",
             event: "TealiumLink"
         },
@@ -606,24 +605,8 @@ event: "TealiumLink"
             event: "TealiumLink",
             eventName: "InteractionEvent",
             eventCategory: "Checkout Interaction",
-            eventAction: "Form Submission",
-            paymentDetails: "Card",
-            paymentCardType: ["mc", "visa", "jcb", "diners", "discover"]
-        },
-        {
-            event: "TealiumLink",
-            eventName: "InteractionEvent",
-            eventCategory: "Checkout Interaction",
             eventAction: "Payment Method Selection",
             paymentDetails: /^(Saved)?Card$/
-        },
-        {
-            event: "TealiumLink",
-            eventName: "InteractionEvent",
-            eventCategory: "Checkout Interaction",
-            eventAction: "Form Submission",
-            paymentDetails: "SavedCard",
-            paymentCardType: ["mc", "visa", "jcb", "diners", "discover"]
         },
         {"eventAction":/^Field (Start|Complete)$/,"currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.firstName","eventName":"InteractionEvent","event":"TealiumLink"},
         {"eventAction":/^Field (Start|Complete)$/,"currency":/^(GBP|EUR|USD)$/,"funnel_name":"Trains","page_name":"Checkout","page_category":"Checkout","ld_version":"design-system","eventCategory":"Passenger Details","eventLabel":"passengers.0.lastName","eventName":"InteractionEvent","event":"TealiumLink"},
