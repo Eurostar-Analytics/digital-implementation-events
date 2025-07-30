@@ -829,7 +829,14 @@ event: "TealiumLink"
 	interactionSection: "action menu",
 	eventName: "InteractionEvent",
 	event: "TealiumLink"
-},	
+},
+	{
+	eventAction: "Enter A Booking Reference",
+	eventCategory: "Bookings",
+	eventLabel: /^(Search|Booking Added)$/,
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
   {
     "event": "TealiumLink",
     "eventName": "InteractionEvent",
