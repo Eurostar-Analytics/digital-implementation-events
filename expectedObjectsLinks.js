@@ -818,7 +818,7 @@ event: "TealiumLink"
 {
 	eventCategory: "Exchange journey leg selection",
 	eventAction: "Add",
-	eventLabel: /^(inbound|outbound)$/,
+	eventLabel: /^(Inbound|Outbound|Outbound\|Inbound)$/,
 	eventName: "InteractionEvent",
 	event: "TealiumLink"
 },
