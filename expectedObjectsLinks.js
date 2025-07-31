@@ -1,4 +1,5 @@
 // expectedObjects.js  
+// vs code test
 window.expectedTealiumLinkObjects = [
 {
   "eventAction": "OnClick",
