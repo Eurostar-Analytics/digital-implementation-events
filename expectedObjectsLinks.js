@@ -398,18 +398,10 @@ page_name: "Login",
 page_category: "Checkout",
 ld_version: "design-system",
 eventCategory: "Login or Register",
-eventLabel: /^(Login click|Login success|Login to Register)$/,
+eventLabel: /^(Login click|Login success|Login to Register|Check out as a guest)$/,
 formName: /^(header|checkout|login|booking-magnet-header|booking-magnet-footer)$/,
 eventName: "InteractionEvent",
 event: "TealiumLink"
-},
-{
-	event: "TealiumLink",
-	eventName: "InteractionEvent",
-	eventCategory: "Login or Register",
-	eventAction: "Login",
-	eventLabel: "Check out as a guest",
-	formName: "checkout"
 },
 {
   event: "TealiumLink",
