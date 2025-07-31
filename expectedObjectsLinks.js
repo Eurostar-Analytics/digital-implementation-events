@@ -162,6 +162,14 @@ window.expectedTealiumLinkObjects = [
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
+{
+	eventAction: "Click",
+	eventLabel: "T:Find lowest fares",
+	eventCategory: "Booking Magnet",
+	interactionSection: "header",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
   {
 	eventAction: "Click",
 	eventLabel: /^(T|P|H):Select Outbound Month$/,
