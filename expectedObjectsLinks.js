@@ -43,7 +43,7 @@ window.expectedTealiumLinkObjects = [
 {
   "eventCategory": "Internal Promotion",
   "eventAction": "Impression",
-  "eventNonInteraction": "true",
+  "eventNonInteraction": true,
   "eventLabel": /^.*$/,
   "promotion_id": [/^.*$/],
   "promotion_name": [/^.*$/],
