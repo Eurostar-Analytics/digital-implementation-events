@@ -850,7 +850,7 @@ event: "TealiumLink"
 {
 	eventCategory: "MYB interaction",
 	eventAction: "Click",
-	eventLabel: /^(Upgrade Booking|Exchange Booking|Get Tickets)$/,
+	eventLabel: /^(Upgrade Booking|Exchange Booking|Get Tickets|Cancel Package Booking")$/,
 	interactionSection: /^(action menu|get tickets card)$/,
 	eventName: "InteractionEvent",
 	event: "TealiumLink"
