@@ -128,7 +128,7 @@ window.expectedTealiumViewObjects = [
 {
 	event: "TealiumView",
 	ecommerce_action: "product impressions",
-	app_name: "Packages",
+	app_name: /^(Packages|Hotels)$/,
 	app_platform: "ReactJS",
 	page_category: "SearchResults",
 	currency: /^(GBP|EUR|USD)$/,
