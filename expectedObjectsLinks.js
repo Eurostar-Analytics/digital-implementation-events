@@ -66,6 +66,13 @@ window.expectedTealiumLinkObjects = [
 	"event": "TealiumLink"
 },
 {
+	eventCategory: "Border Requirements",
+	eventAction: "Click",
+	eventLabel: "Check Requirements",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
   "eventAction": "Expand",
   "eventCategory": "Booking Magnet",
   "eventLabel": /^(P|H|T)(:Expand)$/,
