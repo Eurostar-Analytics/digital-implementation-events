@@ -804,7 +804,7 @@ window.expectedTealiumViewObjects = [
 	refundJourneyType: "full",
 	products_count: /^\d+$/,
 	product_status: [/^(cancelled by customer)$/],
-	product_name: [/^\d{7} - \d{7}:adult|().*\:\d+)?$/],
+	product_name: [/^\d{7} - \d{7}:adult|.*\:\d+)?$/],
 	product_id: [/^\d{7} - \d{7}|(\d+)?$/],
 	product_quantity: [/^\d+$/],
 	product_price: [/^\d+\.\d{2}$/],
