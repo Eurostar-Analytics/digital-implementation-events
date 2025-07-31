@@ -882,7 +882,6 @@ event: "TealiumLink"
 	eventName: "InteractionEvent",
 	event: "TealiumLink"
 },	
-// 07/25 - Billie
 {
   event: "TealiumLink",
   eventName: "InteractionEvent",
