@@ -265,6 +265,14 @@ window.expectedTealiumViewObjects = [
 	page_name: "Login"
 },
 {
+	event: "TealiumView",
+	isLoggedIn: "false",
+	currency: /^(GBP|EUR|USD)$/,
+	funnel_name: "Register",
+	page_category: "Register",
+	page_name: "Register"
+},
+{
   event: "TealiumView",
   funnel_name: "ManageBooking",
   page_category: "Dashboard",
