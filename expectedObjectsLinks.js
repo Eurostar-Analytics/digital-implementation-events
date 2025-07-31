@@ -13,7 +13,7 @@ window.expectedTealiumLinkObjects = [
 	eventAction: "OnClick",
 	destinationUrl: /^(.*)$/,
 	eventCategory: "HeaderLink",
-	eventLabel: "TopMenu_Account",
+	eventLabel: /^TopMenu_(Account|Login)$/,
 	eventName: /^NavigationEvent_v(\d{1})$/,
 	event: "TealiumLink"
 },
