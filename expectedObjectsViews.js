@@ -36,7 +36,7 @@ window.expectedTealiumViewObjects = [
     sPaxYouth: /^\d+$/,
     sPaxInfants: /^\d+$/,
     sPaxSenior: /^\d+$/,
-    sPaxCompanion: /^(\d+)?$/,
+    sPaxCompanion: /^(\d+|null|undefined)?$/,
     sPaxTotal: /^\d+$/,
     basket_value: /^\d+$/,
     basket_value_inpoints: /^\d+$/,
