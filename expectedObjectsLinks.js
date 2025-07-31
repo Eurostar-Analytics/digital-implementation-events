@@ -882,4 +882,33 @@ event: "TealiumLink"
 	eventName: "InteractionEvent",
 	event: "TealiumLink"
 },	
+// 07/25 - Billie
+{
+  event: "TealiumLink",
+  eventName: "InteractionEvent",
+  eventCategory: "EurostarForBusiness",
+  eventAction: "Your Business",
+  eventLabel: "AddBillieToCheckout:Click"
+},
+{
+  event: "TealiumLink",
+  eventName: "InteractionEvent",
+  eventCategory: "EurostarForBusiness",
+  eventAction: "Your Business",
+  eventLabel: "AddBillieToCheckout:Success"
+},
+{
+  event: "TealiumLink",
+  eventName: "InteractionEvent",
+  eventCategory: "EurostarForBusiness",
+  eventAction: "Your Business",
+  eventLabel: "DifferentEmailSave:Click"
+},	
+{
+  event: "TealiumLink",
+  eventName: "InteractionEvent",
+  eventCategory: "EurostarForBusiness",
+  eventAction: "Your Business",
+  eventLabel: "DifferentEmailSave:Success"
+}	
 ];
