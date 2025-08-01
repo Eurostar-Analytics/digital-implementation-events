@@ -383,7 +383,7 @@ page_category: "Checkout",
 ld_version: "design-system",
 eventCategory: "Login or Register",
 eventLabel: /^(Login click|Login success|Login to Register|Check out as a guest)$/,
-formName: /^(header|checkout|login|booking-magnet-header|booking-magnet-footer)$/,
+formName: /^(header|checkout|login|booking-magnet-header|booking-magnet-footer|eurostar-for-business)$/,
 eventName: "InteractionEvent",
 event: "TealiumLink"
 },
