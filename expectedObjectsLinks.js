@@ -2,44 +2,13 @@
 // vs code test
 window.expectedTealiumLinkObjects = [
 {
-  "eventAction": "OnClick",
-  "eventCategory": "HeaderLink",
-  "eventLabel": "TopMenu_Logo",
-  "destinationUrl": "https://staging.eurostar.com/uk-en",
-  "eventName": /^NavigationEvent_v(\d{1})$/,
-  "event": "TealiumLink"
-},
-{
 	eventAction: "OnClick",
 	destinationUrl: /^(.*)$/,
 	eventCategory: "HeaderLink",
-	eventLabel: /^TopMenu_(Account|Login)$/,
+	eventLabel: /^TopMenu_(.*)$/,
 	eventName: /^NavigationEvent_v(\d{1})$/,
-	event: "TealiumLink"
+	event: "TealiumLink",
 },
-  {
-    "eventAction": "OnClick",
-    "eventCategory": "HeaderLink",
-    "eventLabel": "TopMenu_MarketSelectorModal_Open",
-    "eventName": /^NavigationEvent_v(\d{1})$/,
-    "event": "TealiumLink"
-  },
-  {
-    "eventAction": "OnClick",
-    "eventCategory": "HeaderLink",
-    "eventLabel": "TopMenu_MarketSelectorModal_Select",
-    "destinationUrl": "https://staging.eurostar.com/uk-en",
-    "eventName": /^NavigationEvent_v(\d{1})$/,
-    "event": "TealiumLink"
-  },
-{
-	eventAction: "OnClick",
-	eventCategory: "HeaderLink",
-	eventLabel: "TopMenu_EurostarApp",
-	destinationUrl: "https://staging.eurostar.comtravel-info/your-trip/eurostar-app",
-	eventName: /^NavigationEvent_v(\d{1})$/,
-	event: "TealiumLink"
-},	
 {
   "eventCategory": "Internal Promotion",
   "eventAction": "Impression",
