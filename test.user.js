@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Tealium Data Layer to Adobe Analytics Mapper
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.6
 // @description  Map Tealium utag.data to Adobe Analytics eVars and output to the console
 // @author       KR
 // @match        *://*.eurostar.com/*
