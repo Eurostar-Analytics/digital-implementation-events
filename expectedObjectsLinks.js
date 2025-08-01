@@ -4,8 +4,8 @@ window.expectedTealiumLinkObjects = [
 {
 	eventAction: "OnClick",
 	destinationUrl: /^(.*)$/,
-	eventCategory: "HeaderLink",
-	eventLabel: /^TopMenu_(.*)$/,
+	eventCategory: /^(Header|Footer)Link$/,
+	eventLabel: /^(TopMenu_)?(.*)$/,
 	eventName: /^NavigationEvent_v(\d{1})$/,
 	event: "TealiumLink",
 },
