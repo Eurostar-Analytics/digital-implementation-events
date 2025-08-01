@@ -36,11 +36,19 @@ window.expectedTealiumLinkObjects = [
 },
 {
 	eventCategory: "Border Requirements",
-	eventAction: "Click",
-	eventLabel: "Check Requirements",
+	eventAction: /^(Click|Edit Your Details|Change Tabs)$/,
+	eventLabel: /^(Check Requirements|Edit|Edit Requirements|Edit Requirements Success|Outbound Journey|Check Return Journey|Learn More On The EES Website)$/,
 	eventName: "InteractionEvent",
+	destinationUrl: /^(.*)$/,
 	event: "TealiumLink"
 },
+{
+	event: "TealiumLink",
+	eventName: "InteractionEvent",
+	eventCategory: "Accordion",
+	eventAction: "Expand",
+	eventLabel: "Entry / Exit System (EES):Complete Check"
+},	
 {
   "eventAction": "Expand",
   "eventCategory": "Booking Magnet",
