@@ -2,44 +2,13 @@
 // vs code test
 window.expectedTealiumLinkObjects = [
 {
-  "eventAction": "OnClick",
-  "eventCategory": "HeaderLink",
-  "eventLabel": "TopMenu_Logo",
-  "destinationUrl": "https://staging.eurostar.com/uk-en",
-  "eventName": /^NavigationEvent_v(\d{1})$/,
-  "event": "TealiumLink"
-},
-{
 	eventAction: "OnClick",
 	destinationUrl: /^(.*)$/,
-	eventCategory: "HeaderLink",
-	eventLabel: /^TopMenu_(Account|Login)$/,
+	eventCategory: /^(Header|Footer)Link$/,
+	eventLabel: /^(TopMenu_)?(.*)$/,
 	eventName: /^NavigationEvent_v(\d{1})$/,
-	event: "TealiumLink"
+	event: "TealiumLink",
 },
-  {
-    "eventAction": "OnClick",
-    "eventCategory": "HeaderLink",
-    "eventLabel": "TopMenu_MarketSelectorModal_Open",
-    "eventName": /^NavigationEvent_v(\d{1})$/,
-    "event": "TealiumLink"
-  },
-  {
-    "eventAction": "OnClick",
-    "eventCategory": "HeaderLink",
-    "eventLabel": "TopMenu_MarketSelectorModal_Select",
-    "destinationUrl": "https://staging.eurostar.com/uk-en",
-    "eventName": /^NavigationEvent_v(\d{1})$/,
-    "event": "TealiumLink"
-  },
-{
-	eventAction: "OnClick",
-	eventCategory: "HeaderLink",
-	eventLabel: "TopMenu_EurostarApp",
-	destinationUrl: "https://staging.eurostar.comtravel-info/your-trip/eurostar-app",
-	eventName: /^NavigationEvent_v(\d{1})$/,
-	event: "TealiumLink"
-},	
 {
   "eventCategory": "Internal Promotion",
   "eventAction": "Impression",
@@ -67,11 +36,19 @@ window.expectedTealiumLinkObjects = [
 },
 {
 	eventCategory: "Border Requirements",
-	eventAction: "Click",
-	eventLabel: "Check Requirements",
+	eventAction: /^(Click|Edit Your Details|Change Tabs)$/,
+	eventLabel: /^(Check Requirements|Edit|Edit Requirements|Edit Requirements Success|Outbound Journey|Check Return Journey|Learn More On The EES Website)$/,
 	eventName: "InteractionEvent",
+	destinationUrl: /^(.*)$/,
 	event: "TealiumLink"
 },
+{
+	event: "TealiumLink",
+	eventName: "InteractionEvent",
+	eventCategory: "Accordion",
+	eventAction: "Expand",
+	eventLabel: "Entry / Exit System (EES):Complete Check"
+},	
 {
   "eventAction": "Expand",
   "eventCategory": "Booking Magnet",
@@ -406,7 +383,7 @@ page_category: "Checkout",
 ld_version: "design-system",
 eventCategory: "Login or Register",
 eventLabel: /^(Login click|Login success|Login to Register|Check out as a guest)$/,
-formName: /^(header|checkout|login|booking-magnet-header|booking-magnet-footer)$/,
+formName: /^(header|checkout|login|booking-magnet-header|booking-magnet-footer|eurostar-for-business)$/,
 eventName: "InteractionEvent",
 event: "TealiumLink"
 },
