@@ -273,6 +273,14 @@ window.expectedTealiumViewObjects = [
 	page_name: "Register"
 },
 {
+	event: "TealiumView",
+	isLoggedIn: "false",
+	page_category: "ResetPassword",
+	currency: "GBP",
+	funnel_name: "Register",
+	page_name: "ResetPassword"
+},
+{
   event: "TealiumView",
   funnel_name: "ManageBooking",
   page_category: "Dashboard",
