@@ -326,7 +326,14 @@ window.expectedTealiumLinkObjects = [
 	product_hotel_package_savings: [/^(.*)$/],
 	eventName: "ImpressionEvent",
 	event: "TealiumLink"
-},	
+},
+{
+	eventAction: "Click",
+	eventCategory: "Attractions Carousel",
+	eventLabel: "Arrows",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
 {
 eventCategory: "Insurance Selection",
 eventAction: /^(Uns|S)elected Policy$/,
