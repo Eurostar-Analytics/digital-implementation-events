@@ -372,6 +372,27 @@ eventName: "InteractionEvent",
 event: "TealiumLink"
 },
 {
+	eventAction: "Forgotten your password",
+	eventCategory: "Login or Register",
+	formName: "header",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
+	eventAction: "Reset password email",
+	eventCategory: "Login or Register",
+	eventLabel: "Reset password email",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
+	eventAction: "Reset password email",
+	eventCategory: "Login or Register",
+	eventLabel: "Reset password email sent",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
   event: "TealiumLink",
   eventName: "InteractionEvent",
   eventCategory: "Passenger Details",
