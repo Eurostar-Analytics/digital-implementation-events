@@ -273,6 +273,13 @@ window.expectedTealiumViewObjects = [
 	page_name: "Register"
 },
 {
+	eventAction: "Forgotten your password",
+	eventCategory: "Login or Register",
+	formName: "header",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
 	event: "TealiumView",
 	isLoggedIn: "false",
 	page_category: "ResetPassword",
