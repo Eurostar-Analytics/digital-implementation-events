@@ -386,6 +386,22 @@ event: "TealiumLink"
 	event: "TealiumLink"
 },
 {
+	eventAction: "Register",
+	eventCategory: "Login or Register",
+	eventLabel: "Register click",
+	formName: "registration",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
+	eventAction: "Register",
+	eventCategory: "Login or Register",
+	eventLabel: "Register success",
+	formName: "registration",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
 	eventAction: "Reset password email",
 	eventCategory: "Login or Register",
 	eventLabel: "Reset password email sent",
