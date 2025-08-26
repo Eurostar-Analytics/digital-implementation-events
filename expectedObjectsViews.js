@@ -67,11 +67,11 @@ window.expectedTealiumViewObjects = [
     product_train_passenger_type: [/^(adult|null)$/],
     product_train_sale_tag: [/^(lowest fare|limited seats.*|null)?$/],
     product_travel_date: [/^\d{4}-\d{2}-\d{2}$/],
-    product_train_fare_name: [/^(through fare|null)?$/],
-    product_train_fare_type: [/^(ES_ER|ER_SN|null)?$/],
+    product_train_fare_name: [/^(through fare|summated fare|null)?$/],
+    product_train_fare_type: [/^(ES_ER|ER_LY|ES_LY|ER_SN|ES_SN|ER_SNCB|ES_SNCB|null)?$/], 
     product_total_journey_length: [/^\d+$/],
     product_train_journey_length: [/^\d+$/],
-    page_name: /^(Upgrade\/)?SearchResults(\/Inbound)?$/
+    page_name: /^(Upgrade\/)?SearchResults(\/Inbound)?(\/FlexiDates)?$/
   },
 {
     event: "TealiumView",
