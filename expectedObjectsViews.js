@@ -127,7 +127,7 @@ window.expectedTealiumViewObjects = [
     product_variant: [/^(outbound|inbound|null)$/],
     product_departure_date: [/^\d{4}-\d{2}-\d{2}|null$/],
     product_return_date: [/^(\d{4}-\d{2}-\d{2}|null|undefined)$/],
-    product_train_class: [/^Eurostar (Standard|Plus|Premier|Standard Seconde|Standard Seconde|Standard Première|Flex Première|Standard|Wheelchair|PREMIÈRE SIGNATURE|PREMIÈRE|Standard Premier|Comfort|Business Premier|Premium|BUSINESS 1ÈRE|STANDARD 1ÈRE)$/],
+    product_train_class: [/^Eurostar (Standard|Plus|Premier)|Standard Seconde|Standard Seconde|Standard Première|Flex Première|Standard|Wheelchair|PREMIÈRE SIGNATURE|PREMIÈRE|Standard Premier|Comfort|Business Premier|Premium|BUSINESS 1ÈRE|STANDARD 1ÈRE)$/],
     product_train_route: [/^(london route|continent route)$/],
     product_train_origin_stationcode: [/^\d{7}$/],
     product_train_destination_stationcode: [/^\d{7}$/],
