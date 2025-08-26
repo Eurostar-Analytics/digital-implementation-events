@@ -57,7 +57,7 @@ window.PATTERNS = {
   hashedEmail: /^[a-f0-9]{64}$/,
   
   // Membership ID - 16 occurrences
-  membershipId: /^\d{17}$/,
+  membershipId: /^\d{17}|null$/,
   
   // Boolean values - 18 occurrences
   boolean: /^(true|false)$/,
