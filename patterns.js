@@ -89,18 +89,26 @@ window.PATTERNS = {
   
   // Train number - 4 digits
   trainNumber: /^\d{4}$/,
+  trainNumberInbound: /^\d{4}$/,
   
   // Train brands
   trainBrand: /^(ES|ER|SN|SNCB)$/,
   
   // Train ticket types
   trainTicketType: /^(ESTAR_PUB_(STD|PLUS|PREM)|SNCF1SF|RED_ESTAR_PUB_PLUS|null)$/,
+
+  // Train tariffs - 11 characters
+  trainTariff: /^[A-Z0-9]{11}$/,
+  trainTariffInbound: /^([A-Z0-9]{11}|null|undefined)$/,
   
   // Extended train ticket types
   trainTicketTypeExtended: /^.*$/,
   
   // Train connection operators
   connectionOperator: /^(null|Eurostar|SNCF)?$/,
+
+  // Train connection codes
+  connectionCode: /^(null|undefined|\d{7})?$/,
   
   // Train fare types
   fareType: /^(ES_ER|ER_LY|ES_LY|ER_SN|ES_SN|ER_SNCB|ES_SNCB|null)?$/,
