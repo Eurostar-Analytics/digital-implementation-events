@@ -105,7 +105,8 @@ window.PATTERNS = {
   trainTicketTypeExtended: /^.*$/,
   
   // Train connection operators
-  connectionOperator: /^(null|Eurostar|SNCF)?$/,
+  connectionOperator: /^(Eurostar|SNCF)?$/,
+  connectionOperatorInbound: /^(null|Eurostar|SNCF)?$/,
 
   // Train connection codes
   connectionCode: /^(null|undefined|\d{7})?$/,
