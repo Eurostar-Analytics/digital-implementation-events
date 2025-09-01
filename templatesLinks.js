@@ -142,7 +142,7 @@ window.expectedTealiumLinkObjects = [
 },
 {
 	eventAction: "Click",
-	eventLabel: /^(T|P|H):(Search|Edit|Find lowest fares)$/,
+	eventLabel: /^(T|P|H):(Search|Edit|Close|Find lowest fares)$/,
 	eventCategory: "Booking Magnet",
 	interactionSection: "header",
 	eventName: "InteractionEvent",
