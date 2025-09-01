@@ -141,7 +141,13 @@ window.expectedTealiumLinkObjects = [
 	eventName: "InteractionEvent",
 	event: "TealiumLink",
 },
-	
+{
+	eventAction: "OnClick",
+	eventCategory: "SearchResults_TravelClassInfo",
+	eventLabel: "SearchResults_TravelClassInfo",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},	
 {
   "eventAction": "Select Outbound",
   "eventCategory": "Train Selection",
