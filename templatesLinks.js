@@ -69,20 +69,12 @@ window.expectedTealiumLinkObjects = [
 },	
 {
   "eventAction": "Field Start",
-  "eventLabel": /^(T|P|H):From$/,
+  "eventLabel": /^(T|P|H):(To|From)$/,
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
-{
-  "eventAction": "Field Start",
-  "eventLabel":/^(T|P|H):To$/,
-  "eventCategory": "Booking Magnet",
-  "interactionSection": "header",
-  "eventName": "InteractionEvent",
-  "event": "TealiumLink"
-},	
 {
   "eventAction": "Field Completion",
   "eventLabel": /^(T:From_\d{7}|P:From_\d{3}|H:From_\d{3})$/,
@@ -101,7 +93,7 @@ window.expectedTealiumLinkObjects = [
 },
 {
   "eventAction": "Field Completion",
-  "eventLabel": /^(T|P|H):Calendar|Outbound$/,
+  "eventLabel": /^(T|P|H):(Calendar|Outbound|Inbound)$/,
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
   "eventName": "InteractionEvent",
@@ -110,15 +102,7 @@ window.expectedTealiumLinkObjects = [
 },
 {
   "eventAction": "Field Start",
-  "eventLabel": /^(T|P|H):Calendar|Inbound$/,
-  "eventCategory": "Booking Magnet",
-  "interactionSection": "header",
-  "eventName": "InteractionEvent",
-  "event": "TealiumLink"
-},
-{
-  "eventAction": "Field Completion",
-  "eventLabel": /^(T|P|H):Calendar|Inbound$/,
+  "eventLabel": /^(T|P|H):(Calendar|Outboubd|Inbound)$/,
   "eventCategory": "Booking Magnet",
   "interactionSection": "header",
   "eventName": "InteractionEvent",
