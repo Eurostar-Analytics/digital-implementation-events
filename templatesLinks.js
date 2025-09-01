@@ -100,14 +100,6 @@ window.expectedTealiumLinkObjects = [
   "event": "TealiumLink"
 },
 {
-  "eventAction": "Click",
-  "eventLabel": /^(T|P|H):Search$/,
-  "eventCategory": "Booking Magnet",
-  "interactionSection": "header",
-  "eventName": "InteractionEvent",
-  "event": "TealiumLink"
-},
-{
   "eventAction": "Field Completion",
   "eventLabel": /^(T|P|H):Calendar|Outbound$/,
   "eventCategory": "Booking Magnet",
@@ -150,7 +142,7 @@ window.expectedTealiumLinkObjects = [
 },
 {
 	eventAction: "Click",
-	eventLabel: "T:Find lowest fares",
+	eventLabel: /^(T|P|H):(Search|Edit|Find lowest fares)$/,
 	eventCategory: "Booking Magnet",
 	interactionSection: "header",
 	eventName: "InteractionEvent",
@@ -158,13 +150,14 @@ window.expectedTealiumLinkObjects = [
 },
   {
 	eventAction: "Click",
-	eventLabel: /^(T|P|H):Select Outbound Month$/,
+	eventLabel: /^(T|P|H):Select (Out|In)bound Month$/,
 	eventCategory: "Booking Magnet",
 	interactionSection: "header",
 	formName: "bm-no-pricing",
 	eventName: "InteractionEvent",
 	event: "TealiumLink",
-},	
+},
+	
 {
   "eventAction": "Select Outbound",
   "eventCategory": "Train Selection",
