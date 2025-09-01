@@ -212,6 +212,28 @@ window.PATTERNS = {
   // Expand/collapse actions
   expandCollapseActions: /^(Expand|Collapse)$/,
   
+  // === MISSING PATTERNS FOR FALLBACK ===
+  // Page category pattern - accepts any text
+  page_category: /^.*$/,
+  
+  // Page name pattern - accepts any text  
+  page_name: /^.*$/,
+  
+  // IsLoggedIn pattern - alias for boolean
+  isLoggedIn: /^(true|false)$/,
+  
+  // BusinessID pattern - alias for businessId (note different casing)
+  businessID: /^(null|undefined|[\w-]*)$/,
+  
+  // MembershipID pattern - alias for membershipId  
+  membershipID: /^\d{17}|null$/,
+  
+  // Membership details pattern - accepts any text or null
+  membershipDetails: /^(.+|null)$/,
+  
+  // Customer is admin pattern - alias for boolean
+  customer_is_admin: /^(true|false)$/,
+  
   // === SPECIAL PATTERNS ===
   // Conversation ID for chatbot
   conversationId: /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/,
