@@ -264,6 +264,91 @@ window.PATTERNS = {
   arrayPriceDecimal: [/^\d+(\.\d{2})?$/]
 };
 
+// === APP-SPECIFIC FALLBACK CONFIGURATIONS ===
+// App-specific variable mappings for fallback validation  
+// Format: field_name: pattern_reference
+window.APP_FALLBACK_CONFIGS = {
+  'www-app': {
+    'page_name': '@PATTERNS.page_name',
+    'page_category': '@PATTERNS.page_category', 
+    'currency': '@PATTERNS.currency'
+  },
+  'search-app': {
+    'page_category': '@PATTERNS.page_category',
+    'page_name': '@PATTERNS.page_name',
+    'currency': '@PATTERNS.currency',
+    'funnel_name': '@PATTERNS.anyText',
+    'isLoggedIn': '@PATTERNS.isLoggedIn',
+    'customer_hashedemail': '@PATTERNS.hashedEmail',
+    'customer_is_admin': '@PATTERNS.customer_is_admin',
+    'businessID': '@PATTERNS.businessID',
+    'loyaltyTier': '@PATTERNS.loyaltyTier',
+    'membershipID': '@PATTERNS.membershipID'
+  },
+  'travel-extras-app': {
+    'app_platform': '@PATTERNS.anyText',
+    'language': '@PATTERNS.anyText',
+    'market': '@PATTERNS.anyText',
+    'page_name': '@PATTERNS.page_name',
+    'currency': '@PATTERNS.currency',
+    'funnel_name': '@PATTERNS.anyText'
+  },
+  'login-app': {
+    'page_category': '@PATTERNS.page_category',
+    'page_name': '@PATTERNS.page_name',
+    'currency': '@PATTERNS.currency',
+    'funnel_name': '@PATTERNS.anyText',
+    'isLoggedIn': '@PATTERNS.isLoggedIn'
+  },
+  'checkout-app': {
+    'page_category': '@PATTERNS.page_category',
+    'page_name': '@PATTERNS.page_name',
+    'currency': '@PATTERNS.currency',
+    'funnel_name': '@PATTERNS.anyText',
+    'isLoggedIn': '@PATTERNS.isLoggedIn',
+    'customer_hashedemail': '@PATTERNS.hashedEmail',
+    'customer_is_admin': '@PATTERNS.customer_is_admin',
+    'businessID': '@PATTERNS.businessID',
+    'loyaltyTier': '@PATTERNS.loyaltyTier',
+    'membershipDetails': '@PATTERNS.membershipDetails',
+    'membershipID': '@PATTERNS.membershipID'
+  },
+  'customer-dashboard-app': {
+    'page_category': '@PATTERNS.page_category',
+    'page_name': '@PATTERNS.page_name',
+    'isLoggedIn': '@PATTERNS.isLoggedIn',
+    'customer_hashedemail': '@PATTERNS.hashedEmail',
+    'customer_is_admin': '@PATTERNS.customer_is_admin',
+    'businessID': '@PATTERNS.businessID',
+    'loyaltyTier': '@PATTERNS.loyaltyTier',
+    'membershipDetails': '@PATTERNS.membershipDetails',
+    'membershipID': '@PATTERNS.membershipID'
+  },
+  'BusinessDashboard': {
+    'page_category': '@PATTERNS.page_category',
+    'page_name': '@PATTERNS.page_name', 
+    'isLoggedIn': '@PATTERNS.isLoggedIn',
+    'customer_hashedemail': '@PATTERNS.hashedEmail',
+    'customer_is_admin': '@PATTERNS.customer_is_admin',
+    'businessID': '@PATTERNS.businessID',
+    'loyaltyTier': '@PATTERNS.loyaltyTier',
+    'membershipDetails': '@PATTERNS.membershipDetails',
+    'membershipID': '@PATTERNS.membershipID'
+  },
+  'snap': {
+    'page_category': '@PATTERNS.page_category',
+    'page_name': '@PATTERNS.page_name',
+    'funnel_name': '@PATTERNS.anyText',
+    'isLoggedIn': '@PATTERNS.isLoggedIn',
+    'customer_hashedemail': '@PATTERNS.hashedEmail',
+    'customer_is_admin': '@PATTERNS.customer_is_admin',
+    'businessID': '@PATTERNS.businessID',
+    'loyaltyTier': '@PATTERNS.loyaltyTier',
+    'membershipDetails': '@PATTERNS.membershipDetails',
+    'membershipID': '@PATTERNS.membershipID'
+  }
+};
+
 // Utility function to resolve pattern references in specifications
 window.resolvePatterns = function(spec) {
   const resolved = {};
