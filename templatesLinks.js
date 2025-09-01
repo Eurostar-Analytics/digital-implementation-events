@@ -249,6 +249,13 @@ window.expectedTealiumLinkObjects = [
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
+	{
+	eventAction: /^(In|Out)bound$/,
+	eventCategory: "Date Picker",
+	eventLabel: /^Chevron (Next|Previous)$/,
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
 {
   "eventAction": "Hotel Selection",
   "eventCategory": "Product tile",
