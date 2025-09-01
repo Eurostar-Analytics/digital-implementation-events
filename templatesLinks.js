@@ -349,6 +349,13 @@ eventLabel: /^(Out|In)bound Train$/,
 eventCategory: "Side Basket",
 eventName: "InteractionEvent",
 event: "TealiumLink"
+},
+{
+	eventAction: "Remove",
+	eventLabel: "Insurance",
+	eventCategory: "Side Basket",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
 },	
 {
 eventAction: "@PATTERNS.loginActions",
