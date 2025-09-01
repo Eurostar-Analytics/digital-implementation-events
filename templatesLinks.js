@@ -623,11 +623,6 @@ event: "TealiumLink"
         {"eventCategory":"Passenger detail","eventAction":"Contact details","eventLabel":"Save contact details:button","eventName":"InteractionEvent","event":"TealiumLink"},
         {
             eventAction: "Validation Error",
-            currency: "@PATTERNS.currency",
-            funnel_name: "@PATTERNS.funnelName",
-            page_name: "Checkout",
-            page_category: "Checkout",
-            ld_version: "design-system",
             eventCategory: "Error",
             eventLabel: "@PATTERNS.anyText",
             errorMessage: "@PATTERNS.anyText",
@@ -636,11 +631,6 @@ event: "TealiumLink"
         },
 	{
 		eventAction: "Expand",
-		currency: "@PATTERNS.currency",
-		funnel_name: "@PATTERNS.funnelName",
-		page_name: "Checkout",
-		page_category: "Checkout",
-		ld_version: "design-system",
 		eventCategory: "Passenger Details",
 		eventLabel: "Membership number accordion",
 		eventName: "InteractionEvent",
