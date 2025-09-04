@@ -121,7 +121,7 @@ window.PATTERNS = {
   productVariant: /^(outbound|inbound|null)$/,
   
   // Train passenger types
-  passengerType: /^(adult|child|infant|null)$/,
+  passengerType: /^(adult|youth|senior|child|infant)$/,
   
   // Product status
   productStatus: /^(available|not available)$/,
