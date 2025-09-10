@@ -409,7 +409,7 @@ window.expectedTealiumViewObjects = [
   sESTrainNumberOutbound: /^\d{4}?$/,
   sClassInbound: /^Eurostar (Standard|Plus|Premier)|null|undefined$/,
   sInboundTime: /^\d{2}:\d{2}|null|undefined$/,
-  sESTrainNumberInbound: /^\d{4}|null|undefined$/,
+  sESTrainNumberInbound: "@PATTERNS.trainNumberInbound",
   products_count: "@PATTERNS.number",
   product_status: ["@PATTERNS.bookingStatus"],
   product_name: [/^\d{7} - \d{7}(:adult)|(Cancellation|Comprehensive) insurance|(.*)?$/],
