@@ -74,7 +74,7 @@ window.expectedTealiumViewObjects = [
     product_train_fare_type: ["@PATTERNS.fareType"], 
     product_total_journey_length: ["@PATTERNS.number"],
     product_train_journey_length: ["@PATTERNS.number"],
-    page_name: /^(Upgrade\/)?SearchResults(\/Inbound)?$/
+    page_name: /^(GroupBookings\/|Upgrade\/)?SearchResults(\/Inbound)?$/
   },
 	// FLEXIDATE SRP
 	  {
