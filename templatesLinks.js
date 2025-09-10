@@ -126,7 +126,7 @@ window.expectedTealiumLinkObjects = [
 },
 {
 	eventAction: "Click",
-	eventLabel: /^(T|P|H):Explore all(.*)$/,
+	eventLabel: /^(T|P|H):Explore all(.*)$/, 
 	eventCategory: "Booking Magnet",
 	interactionSection: "header",
 	eventName: "InteractionEvent",
