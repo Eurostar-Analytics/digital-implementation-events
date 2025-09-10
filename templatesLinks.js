@@ -205,7 +205,7 @@ window.expectedTealiumLinkObjects = [
   "sInboundConnectionCode": "@PATTERNS.connectionCode", 
   "sInboundConnectionOperator": "@PATTERNS.connectionOperatorInbound",
   "sTrainNumberInbound": "@PATTERNS.trainNumberInbound",
-  "sTrainTarriffInbound": "@PATTERNS.trainTariffInbound",
+  "sTrainTarriffInbound": "@PATTERNS.trainTariffOptional",
   "basket_value": "@PATTERNS.priceRange",
   "sTrainSaleTagsInbound": "@PATTERNS.anyText",
   "basket_value_inpoints": "@PATTERNS.priceRange",
@@ -228,7 +228,7 @@ window.expectedTealiumLinkObjects = [
   "sOutboundConnectionCode": "@PATTERNS.connectionCode", 
   "sOutboundConnectionOperator": /^(null|undefined)$/,
   "sTrainNumberOutbound": "@PATTERNS.trainNumber",
-  "sTrainTarriffOutbound": "@PATTERNS.trainTariff",
+  "sTrainTarriffOutbound": "@PATTERNS.trainTariffOptional",
   "basket_value": "@PATTERNS.priceRange",
   "sTrainSaleTagsOutbound": "@PATTERNS.anyText",
   "basket_value_inpoints": "@PATTERNS.priceRange",
@@ -250,7 +250,7 @@ window.expectedTealiumLinkObjects = [
   "sInboundConnectionCode": "@PATTERNS.connectionCode", 
   "sInboundConnectionOperator": "@PATTERNS.connectionOperatorInbound",
   "sTrainNumberInbound": "@PATTERNS.trainNumberInbound",
-  "sTrainTarriffInbound": "@PATTERNS.trainTariffInbound",
+  "sTrainTarriffInbound": "@PATTERNS.trainTariffOptional",
   "basket_value": "@PATTERNS.priceRange",
   "sTrainSaleTagsInbound": "@PATTERNS.anyText",
   "basket_value_inpoints": "@PATTERNS.priceRange",
@@ -261,7 +261,18 @@ window.expectedTealiumLinkObjects = [
   "eventName": "InteractionEvent",
   "event": "TealiumLink"
 },
-
+{
+	eventCategory: "Train Selection",
+	eventAction: /^Open (Out|In)bound Itinerary Details$/,
+	sTrainNumberOutbound: "@PATTERNS.trainNumber",
+	sOutboundTime: "@PATTERNS.time",
+	sTrainTarriffOutbound: "@PATTERNS.trainTariffOptional",
+	noChanges: "@PATTERNS.number",
+	basket_value: "@PATTERNS.number",
+	basket_value_inpoints: "@PATTERNS.number",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
 {
   "eventAction": "Outbound",
   "eventCategory": "Date Picker",

@@ -88,8 +88,8 @@ window.PATTERNS = {
   trainClass: /^(Eurostar Standard|Eurostar Plus|Eurostar Premier|Standard Seconde|Standard Seconde|Standard Première|Flex Première|Standard|Wheelchair|PREMIÈRE SIGNATURE|PREMIÈRE|Standard Premier|Comfort|Business Premier|Premium|BUSINESS 1ÈRE|STANDARD 1ÈRE)$/,
   
   // Train number - 4 digits
-  trainNumber: /^\d{4}$/,
-  trainNumberInbound: /^\d{4}$/,
+  trainNumber: /^\d{4}(\|\d{4})?$/,
+  trainNumberInbound: /^\d{4}(\|\d{4})?|null|undefined$/,
   
   // Train brands
   trainBrand: /^(ES|ER|SN|SNCB)$/,
@@ -99,7 +99,7 @@ window.PATTERNS = {
 
   // Train tariffs - 11 characters
   trainTariff: /^[A-Z0-9]{11}$/,
-  trainTariffInbound: /^([A-Z0-9]{11}|null|undefined)$/,
+  trainTariffOptional: /^([A-Z0-9]{11}|null|undefined)$/,
   
   // Extended train ticket types
   trainTicketTypeExtended: /^.*$/,
