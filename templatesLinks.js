@@ -165,6 +165,13 @@ window.expectedTealiumLinkObjects = [
 	event: "TealiumLink"
 },	
 {
+	eventAction: "OnClick",
+	eventCategory: /$SearchResults_TimeAnchor_(out|in)bound$/,
+	eventLabel: /$SearchResults_TimeAnchor_(out|in)bound_(morning|afternoon|evening)_(EUR|GBP|USD)_\d+$/,
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
   "eventAction": "Select Outbound",
   "eventCategory": "Train Selection",
   "eventLabel": /^(Eurostar Standard|Eurostar Plus|Eurostar Premier)(\|.*)?$/,
