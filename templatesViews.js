@@ -939,6 +939,32 @@ window.expectedTealiumViewObjects = [
 	sToName: "@PATTERNS.anyText",
 	sJourneyType: "@PATTERNS.journeyType",
 	directOrConnection: "@PATTERNS.connectionType",
-	page_name: "Cancellation/Confirmation"
+	page_name: "Cancellation/Confirmation",
+},
+{
+	event: "TealiumView",
+	app_platform: "ReactJS",
+	app_name: "Trains",
+    language: "@PATTERNS.language",
+	market: "@PATTERNS.market",
+	currency: "@PATTERNS.currency",
+	page_category: "GroupBookings",
+	sFromCode: "@PATTERNS.stationCode",
+	sFromName: "@PATTERNS.anyText",
+	sToCode: "@PATTERNS.stationCode",
+	sToName: "@PATTERNS.anyText",
+	sDateOutbound: "@PATTERNS.date",
+	sTrainNumberOutbound: "@PATTERNS.trainNumber",
+	sOutboundTime: "@PATTERNS.time",
+	sClassOutbound: "@PATTERNS.trainClass",
+	sTrainTarriffOutbound: "@PATTERNS.trainTariff",
+	sTravelHorizon: "@PATTERNS.number",
+	sPaxAdult: "@PATTERNS.number",
+	sPaxChildren: "@PATTERNS.number",
+	sPaxTotal: "@PATTERNS.number",
+	sJourneyType: "@PATTERNS.journeyType",
+	sTravelDuration: "@PATTERNS.number",
+	basket_value: "@PATTERNS.number",
+	page_name: "GroupBookings/Quote"
 }	
 ];
