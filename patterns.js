@@ -95,7 +95,7 @@ window.PATTERNS = {
   trainBrand: /^(ES|ER|SN|SNCB)$/,
   
   // Train ticket types
-  trainTicketType: /^((ESTAR_PUB|GROUP)_(STD|PLUS|PREM)|SNCF1SF|RED_ESTAR_PUB_PLUS|null)$/,
+  trainTicketType: /^((ESTAR_PUB|GROUP)_(STD|PLUS|PREM|PREMIER)|SNCF1SF|RED_ESTAR_PUB_PLUS|null)$/,
 
   // Train tariffs - 11 characters
   trainTariff: /^[A-Z0-9]{11}$/,
