@@ -7,7 +7,7 @@ window.expectedTealiumViewObjects = [
     event: "TealiumView",
     currency: "@PATTERNS.currency",
     funnel_name: "Trains",
-    page_category: "SearchResults",
+    page_category: /^(GroupBookings|SearchResults)$/,
     isLoggedIn: "@PATTERNS.boolean",
     customer_hashedemail: "@PATTERNS.hashedEmail",
     membershipID: "@PATTERNS.membershipId",
