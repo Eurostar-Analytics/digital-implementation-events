@@ -126,6 +126,14 @@ window.expectedTealiumLinkObjects = [
 },
 {
 	eventAction: "Click",
+	eventLabel: /^(T|P|H):Explore all(.*))$/,
+	eventCategory: "Booking Magnet",
+	interactionSection: "header",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
+	eventAction: "Click",
 	eventLabel: /^(T|P|H):(Search|Edit|Close|Find lowest fares)$/,
 	eventCategory: "Booking Magnet",
 	interactionSection: "header",
