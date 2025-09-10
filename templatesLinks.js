@@ -166,8 +166,8 @@ window.expectedTealiumLinkObjects = [
 },	
 {
 	eventAction: "OnClick",
-	eventCategory: /$SearchResults_TimeAnchor_(out|in)bound$/,
-	eventLabel: /$SearchResults_TimeAnchor_(out|in)bound_(morning|afternoon|evening)_(EUR|GBP|USD)_\d+$/,
+	eventCategory: /^SearchResults_TimeAnchor_(out|in)bound$/,
+	eventLabel: /^SearchResults_TimeAnchor_(out|in)bound_(morning|afternoon|evening)_(EUR|GBP|USD)_\d+$/,
 	eventName: "InteractionEvent",
 	event: "TealiumLink"
 },
