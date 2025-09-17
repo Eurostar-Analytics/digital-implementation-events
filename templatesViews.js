@@ -966,5 +966,23 @@ window.expectedTealiumViewObjects = [
 	sTravelDuration: "@PATTERNS.number",
 	basket_value: "@PATTERNS.number",
 	page_name: "GroupBookings/Quote"
-}	
+},
+	{
+	event: "TealiumView",
+	funnel_name: "ManageBooking",
+	page_category: "AdvancePassengerInformation",
+	currency: "@PATTERNS.currency",
+	isLoggedIn: "true",
+	customer_hashedemail: "@PATTERNS.hashedEmail",
+	customer_is_admin: "false",
+	businessID: "@PATTERNS.businessId",
+	loyaltyTier: "@PATTERNS.loyaltyTier",
+	mktOptions: "false",
+	pnr: "@PATTERNS.pnr",
+	pointsOrRegular: "@PATTERNS.bookingType",
+	purchase_hashedemail: "@PATTERNS.hashedEmail",
+	transaction_date: "20250917",
+	transaction_date: "@PATTERNS.transactionDate",
+	page_name: "AdvancePassengerInformation/PassengerDetails"
+}
 ];
