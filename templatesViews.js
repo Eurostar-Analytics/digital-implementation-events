@@ -981,7 +981,6 @@ window.expectedTealiumViewObjects = [
 	pnr: "@PATTERNS.pnr",
 	pointsOrRegular: "@PATTERNS.bookingType",
 	purchase_hashedemail: "@PATTERNS.hashedEmail",
-	transaction_date: "20250917",
 	transaction_date: "@PATTERNS.transactionDate",
 	page_name: "AdvancePassengerInformation/PassengerDetails"
 }
