@@ -470,6 +470,13 @@ event: "TealiumLink"
 	eventLabel: "Save New Passenger To Account:Uncheck"
 },
 {
+	eventCategory: "Passenger details",
+	eventAction: "Advance passenger information",
+	eventLabel: "Save passenger information:button",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},	
+{
 	eventAction: "Page Load",
 	currency: "@PATTERNS.currency",
 	funnel_name: "@PATTERNS.funnelName",
