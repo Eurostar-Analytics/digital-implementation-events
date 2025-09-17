@@ -953,5 +953,12 @@ event: "TealiumLink"
   eventCategory: "EurostarForBusiness",
   eventAction: "Your Business",
   eventLabel: "DifferentEmailSave:Success"
+},
+{
+	eventCategory: "Overlay",
+	eventAction: "Entry Exit System Pre-Registration",
+	eventLabel: "Impressions",
+	eventName: "ImpressionEvent",
+	event: "TealiumLink"
 }	
 ];
