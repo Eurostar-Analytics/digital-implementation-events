@@ -968,6 +968,20 @@ event: "TealiumLink"
 	eventName: "ImpressionEvent",
 	event: "TealiumLink"
 }, 
+{
+	eventCategory: "Booking Interactions",
+	eventAction: "Entry Exit System",
+	eventLabel: "Check Now",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
+{
+	eventCategory: "Border Requirements",
+	eventAction: "Change Tabs",
+	eventLabel: "Return Journey",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
 	{
 	eventAction: "Expand",
 	eventCategory: "HeaderLink",
