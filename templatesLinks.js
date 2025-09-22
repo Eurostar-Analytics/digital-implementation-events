@@ -960,5 +960,12 @@ event: "TealiumLink"
 	eventLabel: "Impressions",
 	eventName: "ImpressionEvent",
 	event: "TealiumLink"
-}	
+}, 
+	{
+	eventAction: "Expand",
+	eventCategory: "HeaderLink",
+	eventLabel: "BurgerMenu",
+	eventName: "NavigationEvent_v4",
+	event: "TealiumLink"
+}
 ];
