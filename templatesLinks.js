@@ -976,6 +976,13 @@ event: "TealiumLink"
 	event: "TealiumLink"
 },
 {
+	eventCategory: "Accordion",
+	eventAction: "Expand",
+	eventLabel: "@PATTERNS.anyText",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},	
+{
 	eventCategory: "Border Requirements",
 	eventAction: "Change Tabs",
 	eventLabel: "Return Journey",
