@@ -26,7 +26,7 @@ window.expectedTealiumLinkObjects = [
 },	
 {
 	"eventAction": "Click",
-	"eventCategory": "Internal Promotion",
+    "eventCategory": /^(Internal Promotion|Upgrade Promo)$/,
 	"promotion_name": ["@PATTERNS.anyText"],
 	"promotion_position": ["@PATTERNS.promotionPosition"],
 	"page_element_cta": "@PATTERNS.anyText",
