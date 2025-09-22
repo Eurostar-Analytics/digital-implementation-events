@@ -587,8 +587,14 @@ event: "TealiumLink"
 	"eventName":"InteractionEvent",
 	"event":"TealiumLink"
 },
-        {"event":"TealiumView","page_category":"Bookings","isLoggedIn":"true","customer_hashedemail":"@PATTERNS.hashedEmail","customer_is_admin":"false","loyaltyTier":"Etoile","membershipID":"30838110000069353","membershipDetails":"Points: 1363811; Points to upgrade: N/A","pointsToSpend":1363811,"pointsToUpgrade":null,"subscriptionType":"premium-pass","subscriptionDuration":6,"subscriptionRemainingDuration":134,"mktOptions":"false","page_name":"Bookings/UpcomingBookings"},
         {"eventAction":"Click","eventCategory":"Bookings","eventLabel":"View Booking","eventName":"InteractionEvent","event":"TealiumLink"},
+{
+	eventAction: "Click",
+	eventCategory: "Bookings",
+	eventLabel: "Add A Booking",
+	eventName: "InteractionEvent",
+	event: "TealiumLink"
+},
         {
             eventAction: "Click",
             currency: "@PATTERNS.currency",
