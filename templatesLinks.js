@@ -12,7 +12,7 @@ window.expectedTealiumLinkObjects = [
 	event: "TealiumLink",
 },
 {
-  "eventCategory": "Internal Promotion",
+  "eventCategory": /^(Internal Promotion|Upgrade Promo)$/,
   "eventAction": "Impression",
   "eventNonInteraction": true,
   "eventLabel": "@PATTERNS.anyText",
@@ -884,11 +884,12 @@ event: "TealiumLink"
 {
 	eventCategory: "MYB interaction",
 	eventAction: "Click",
-	eventLabel: /^(Upgrade Booking|Exchange Booking|Get Tickets|Cancel Package Booking")$/,
+	eventLabel: /^(Upgrade Booking|Exchange Booking|Get Tickets|Cancel Package Booking|Select a Seat)$/,
 	interactionSection: /^(action menu|get tickets card)$/,
 	eventName: "InteractionEvent",
 	event: "TealiumLink"
 },
+
 	{
 	eventAction: "Enter A Booking Reference",
 	eventCategory: "Bookings",
